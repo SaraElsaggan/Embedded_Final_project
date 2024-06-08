@@ -31,6 +31,7 @@
 #include <cortexm/exception-handlers.h>
 
 // ----------------------------------------------------------------------------
+
 void __attribute__((weak))
 Default_Handler(void);
 
@@ -156,8 +157,6 @@ SPI4_IRQHandler(void);
 
 extern unsigned int _estack;
 
-
-void MyExti1(void);
 typedef void
 (* const pHandler)(void);
 
@@ -166,6 +165,7 @@ typedef void
 // The table of interrupt handlers. It has an explicit section name
 // and relies on the linker script to place it at the correct location
 // in memory.
+
 __attribute__ ((section(".isr_vector"),used))
 pHandler __isr_vectors[] =
   {
@@ -207,7 +207,7 @@ pHandler __isr_vectors[] =
     RTC_WKUP_IRQHandler,               // RTC Wakeup through the EXTI line
     FLASH_IRQHandler,                  // FLASH
     RCC_IRQHandler,                    // RCC
-	EXTI0_IRQHandler,                  // EXTI Line0
+    EXTI0_IRQHandler,                  // EXTI Line0
     EXTI1_IRQHandler,                  // EXTI Line1
     EXTI2_IRQHandler,                  // EXTI Line2
     EXTI3_IRQHandler,                  // EXTI Line3
