@@ -52,17 +52,30 @@
 #pragma GCC diagnostic ignored "-Wmissing-declarations"
 #pragma GCC diagnostic ignored "-Wreturn-type"
 
-int
-main(int argc, char* argv[])
-{
-  // At this stage the system clock should have already been configured
-  // at high speed.
+int main(void){
 
-  // Infinite loop
-  while (1)
-    {
-       // Add your code here.
+    Rcc_Init();
+	// Rcc_Enable(RCC_GPIOA);
+	Rcc_Enable(RCC_WWDG);
+
+    //Intializations 
+    LEDM_Init();
+    WDGDrv_Init();
+    WDGM_Init();
+
+    while (1) {
+        // Call LEDM_Manage every 10ms
+        HAL_Delay(10);
+        LEDM_Manage();
+
+        WDGDrv_IsrNotification();
+        
+        // Call WDGM_MainFunction every 20ms
+        HAL_Delay(20);        
+        WDGM_MainFunction();
+
     }
+    return 0;
 }
 
 #pragma GCC diagnostic pop
