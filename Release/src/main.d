@@ -69,8 +69,12 @@ src/main.o: ../src/main.c ../system/include/stm32f4-hal/stm32f4xx_hal.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_dfsdm.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_lptim.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_mmc.h \
- C:\Study\Embedded\ System\ES_Github\Embedded_Final_project\Rcc/RCC.h \
- C:\Study\Embedded\ System\ES_Github\Embedded_Final_project\Lib/Std_Types.h
+ C:\Users\lenovo\Desktop\Embedded_Final_project\Rcc/RCC.h \
+ C:\Users\lenovo\Desktop\Embedded_Final_project\Lib/Std_Types.h \
+ C:\Users\lenovo\Desktop\Embedded_Final_project\Gpio/GPIO.h \
+ C:\Users\lenovo\Desktop\Embedded_Final_project\WatchDog/WDGDRV.h \
+ C:\Users\lenovo\Desktop\Embedded_Final_project\WatchDog/WDGM.h \
+ C:\Users\lenovo\Desktop\Embedded_Final_project\Led/LEDM.h
 ../system/include/stm32f4-hal/stm32f4xx_hal.h:
 ../include/stm32f4xx_hal_conf.h:
 ../system/include/stm32f4-hal/stm32f4xx_hal_rcc.h:
@@ -144,5 +148,9 @@ src/main.o: ../src/main.c ../system/include/stm32f4-hal/stm32f4xx_hal.h \
 ../system/include/stm32f4-hal/stm32f4xx_hal_dfsdm.h:
 ../system/include/stm32f4-hal/stm32f4xx_hal_lptim.h:
 ../system/include/stm32f4-hal/stm32f4xx_hal_mmc.h:
-C:\Study\Embedded\ System\ES_Github\Embedded_Final_project\Rcc/RCC.h:
-C:\Study\Embedded\ System\ES_Github\Embedded_Final_project\Lib/Std_Types.h:
+C:\Users\lenovo\Desktop\Embedded_Final_project\Rcc/RCC.h:
+C:\Users\lenovo\Desktop\Embedded_Final_project\Lib/Std_Types.h:
+C:\Users\lenovo\Desktop\Embedded_Final_project\Gpio/GPIO.h:
+C:\Users\lenovo\Desktop\Embedded_Final_project\WatchDog/WDGDRV.h:
+C:\Users\lenovo\Desktop\Embedded_Final_project\WatchDog/WDGM.h:
+C:\Users\lenovo\Desktop\Embedded_Final_project\Led/LEDM.h:

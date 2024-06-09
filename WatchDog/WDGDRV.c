@@ -4,6 +4,8 @@
 #include "Rcc.h"
 #include <stdint.h>
 #include "stm32f4xx_hal.h"
+#include "Nvic.h"
+#include "Std_Types.h"
 
 
 #include "Std_Types.h"
@@ -27,6 +29,7 @@ void WDGDrv_Init(void)
 
     //enable the early interupt , make the WDGTB to 3 (look at table 64) , Disable window maode by making the window val = upper limit
     WWDG->CFR |=(0x3ff);
+    Nvic_EnableInterrupt(0);
 
 }
 
