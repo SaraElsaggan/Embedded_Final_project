@@ -5,13 +5,16 @@
 static WDGM_StatusType status;
 static uint32 led_no_calls;
 static uint32 start_time;
-    
+uint32 last_execution_time;
 
 void WDGM_Init(void)
 {
     status = NOK ;
     led_no_calls = 0;
     start_time = HAL_GetTick();
+    start_time = 0;
+    last_execution_time = HAL_GetTick(); 
+
 }
 
 void WDGM_MainFunction(void)
@@ -27,6 +30,7 @@ void WDGM_MainFunction(void)
         led_no_calls = 0; // Reset the call counter for the next 100ms period
         start_time = current_time; // update start time for the next 100ms period
     }
+    last_execution_time = current_time;
 }
 
 WDGM_StatusType WDGM_PovideSuppervisionStatus(void)

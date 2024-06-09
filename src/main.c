@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "diag/trace.h"
 #include "stm32f4xx_hal.h"
 #include "RCC.h"
 
@@ -8,7 +7,8 @@
 int main(void){
 
     Rcc_Init();
-	Rcc_Enable(RCC_GPIOA);
+    HAL_Init();
+	Rcc_Enable(RCC_GPIOB);
 	Rcc_Enable(RCC_WWDG);
 
     //initialization.
@@ -21,8 +21,6 @@ int main(void){
         HAL_Delay(10);
         LEDM_Manage();
 
-        WDGDrv_IsrNotification();
-        
         // Call WDGM_MainFunction every 20ms
         HAL_Delay(20);        
         WDGM_MainFunction();
