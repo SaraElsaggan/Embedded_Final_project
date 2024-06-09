@@ -17,7 +17,7 @@ void LEDM_Init(void)
 
 void LEDM_Manage(void)
 {
-	  Hal_Delay(500);
+	  HAL_Delay(500);
       led_state = !led_state;
       GPIO_Write(LED_PIN_ID, led_state);
       WDGM_AlivenessIndication(); // to count the number of function calls

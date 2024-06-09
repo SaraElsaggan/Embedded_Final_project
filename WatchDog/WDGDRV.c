@@ -8,6 +8,8 @@
 
 #include "Std_Types.h"
 
+extern last_execution_time;
+
 
 
 void WDGDrv_Init(void)
