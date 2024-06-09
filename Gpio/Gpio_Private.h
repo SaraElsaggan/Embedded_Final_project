@@ -1,11 +1,3 @@
-/**
- * Gpio_Private.h
- *
- *
- *  Author    : Hager Samir / Youssef Ahmed
- */
-
-
 #ifndef GPIO_PRIVATE_H
 #define GPIO_PRIVATE_H
 #include "Utils.h"
@@ -28,4 +20,4 @@ typedef struct {
 	uint32 GPIO_AFRH;
 } GpioType;
 
-#endif /* GPIO_PRIVATE_H */
+#endif
