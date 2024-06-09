@@ -6,7 +6,7 @@ static WDGM_StatusType status;
 static uint32 led_no_calls;
 static uint32 led_correct_calls;
 static uint32 start_time;
-    
+uint32 last_execution_time;
 
 void WDGM_Init(void)
 {
@@ -14,6 +14,8 @@ void WDGM_Init(void)
     led_no_calls = 0;
     led_correct_calls=0;
     start_time = 0;
+    last_execution_time = HAL_GetTick(); 
+
 }
 
 void WDGM_MainFunction(void)

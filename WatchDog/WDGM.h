@@ -1,5 +1,9 @@
 #ifndef WDGM_H
 #define WDGM_H
+
+extern uint32 last_execution_time;
+
+
 typedef enum {OK = 0, NOK = 1}WDGM_StatusType;
 void WDGM_Init(void);
 void WDGM_MainFunction(void);
