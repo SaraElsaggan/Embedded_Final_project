@@ -1,5 +1,4 @@
-src/main.o: ../src/main.c ../system/include/diag/trace.h \
- ../system/include/stm32f4-hal/stm32f4xx_hal.h \
+src/main.o: ../src/main.c ../system/include/stm32f4-hal/stm32f4xx_hal.h \
  ../include/stm32f4xx_hal_conf.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_rcc.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_def.h \
@@ -69,8 +68,9 @@ src/main.o: ../src/main.c ../system/include/diag/trace.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_spdifrx.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_dfsdm.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_lptim.h \
- ../system/include/stm32f4-hal/stm32f4xx_hal_mmc.h
-../system/include/diag/trace.h:
+ ../system/include/stm32f4-hal/stm32f4xx_hal_mmc.h \
+ C:\Users\lenovo\Desktop\Embedded_Final_project\Rcc/RCC.h \
+ C:\Users\lenovo\Desktop\Embedded_Final_project\Lib/Std_Types.h
 ../system/include/stm32f4-hal/stm32f4xx_hal.h:
 ../include/stm32f4xx_hal_conf.h:
 ../system/include/stm32f4-hal/stm32f4xx_hal_rcc.h:
@@ -144,3 +144,5 @@ src/main.o: ../src/main.c ../system/include/diag/trace.h \
 ../system/include/stm32f4-hal/stm32f4xx_hal_dfsdm.h:
 ../system/include/stm32f4-hal/stm32f4xx_hal_lptim.h:
 ../system/include/stm32f4-hal/stm32f4xx_hal_mmc.h:
+C:\Users\lenovo\Desktop\Embedded_Final_project\Rcc/RCC.h:
+C:\Users\lenovo\Desktop\Embedded_Final_project\Lib/Std_Types.h:

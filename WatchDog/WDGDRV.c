@@ -3,6 +3,8 @@
 #include "WDGM.h"
 #include "Rcc.h"
 #include <stdint.h>
+#include "stm32f4xx_hal.h"
+
 
 #include "Std_Types.h"
 
