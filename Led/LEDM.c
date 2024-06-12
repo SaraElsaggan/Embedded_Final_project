@@ -4,13 +4,16 @@
 #include "GPIO.h"
 #include "stm32f4xx_hal.h"
 #include "WDGM.h"
+#include "WDGDrv.h"
 
 static uint8 led_state;
 
 static void delay(uint32 time){
     volatile uint32 i;
     time *= 1000;
-    for ( i = 0 ; i<time;i++){}
+    for ( i = 0 ; i<time;i++){
+// WDG->CR |= 0x7F;
+    }
 }
 
 
@@ -22,6 +25,8 @@ void LEDM_Init(void)
 
 void LEDM_Manage(void)
 {
+
+    //HAL_Delay(500);
 	delay(500);
     led_state = ~led_state;
     GPIO_Write(LED_PIN_ID, led_state);

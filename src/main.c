@@ -6,14 +6,22 @@
 #include "WDGDRV.h"
 #include "WDGM.h"
 #include "LEDM.h"
+#include <stdint.h>
+
 
 static void delay(uint32 time){
+
     volatile uint32 i;
     time *= 1000;
-    for ( i = 0 ; i<time;i++){}
+    for ( i = 0 ; i<time;i++){
+    // refresh();
+    // WDG->CR |= 0x7F;
+
+    }
 }
 
 int main(void){
+
 
     Rcc_Init();
     HAL_Init();
@@ -22,17 +30,23 @@ int main(void){
 
 //    initialization.
     LEDM_Init();
-//    WDGDrv_Init();
-//    WDGM_Init();
+    WDGDrv_Init();
+    WDGM_Init();
 
+    uint32 counter;
 
     while (1) {
         // Call LEDM_Manage every 10ms
+        // counter = WDG->CR & 0x7F;
+        //printf("WWDG Counter Value: %lu\n", counter);
+
     	delay(10);
+    	// HAL_Delay(10);  
         LEDM_Manage();
 
         // Call WDGM_MainFunction every 20ms
         delay(20);
+        // HAL_Delay(20);
         WDGM_MainFunction();
 
     }
