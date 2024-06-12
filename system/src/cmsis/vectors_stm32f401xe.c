@@ -41,7 +41,7 @@ Default_Handler(void);
 // precedence over these weak definitions
 
 void __attribute__((weak, alias("Default_Handler")))
-WDGDrv_IsrNotification(void);
+WWDG_IRQHandler(void);
 void __attribute__((weak, alias("Default_Handler")))
 PVD_IRQHandler(void);
 void __attribute__((weak, alias("Default_Handler")))
@@ -200,7 +200,7 @@ pHandler __isr_vectors[] =
 
         // ----------------------------------------------------------------------
         // External Interrupts
-        WDGDrv_IsrNotification,        // Window WatchDog
+        WWDG_IRQHandler,        // Window WatchDog
         PVD_IRQHandler,                // PVD through EXTI Line detection
         TAMP_STAMP_IRQHandler,         // Tamper and TimeStamps through the EXTI line
         RTC_WKUP_IRQHandler,           // RTC Wakeup through the EXTI line

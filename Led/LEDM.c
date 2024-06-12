@@ -11,9 +11,11 @@ static uint8 led_state;
 static void delay(uint32 time){
     volatile uint32 i;
     time *= 1000;
+    //  watchdog_refresh();
     for ( i = 0 ; i<time;i++){
-// WDG->CR |= 0x7F;
+    // WDG->CR |= 0xFF; //0111 1111
     }
+    //  watchdog_refresh();
 }
 
 

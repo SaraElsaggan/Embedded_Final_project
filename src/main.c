@@ -13,11 +13,15 @@ static void delay(uint32 time){
 
     volatile uint32 i;
     time *= 1000;
+    // watchdog_refresh();
     for ( i = 0 ; i<time;i++){
     // refresh();
-    // WDG->CR |= 0x7F;
+    // WDG->CR |= 0xFF;
+
+
 
     }
+    // watchdog_refresh();
 }
 
 int main(void){
@@ -30,8 +34,8 @@ int main(void){
 
 //    initialization.
     LEDM_Init();
-    WDGDrv_Init();
     WDGM_Init();
+    // WDGDrv_Init();
 
     uint32 counter;
 
