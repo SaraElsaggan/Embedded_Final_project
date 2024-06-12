@@ -35,7 +35,7 @@ int main(void){
 //    initialization.
     LEDM_Init();
     WDGM_Init();
-    // WDGDrv_Init();
+    WDGDrv_Init();
 
     uint32 counter;
 
@@ -45,8 +45,10 @@ int main(void){
         //printf("WWDG Counter Value: %lu\n", counter);
 
     	delay(10);
+
     	// HAL_Delay(10);  
         LEDM_Manage();
+        // WDG->CR |= 0x3f;  // this is just to debug why the reset keep happening
 
         // Call WDGM_MainFunction every 20ms
         delay(20);

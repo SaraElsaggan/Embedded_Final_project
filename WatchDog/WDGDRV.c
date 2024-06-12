@@ -5,6 +5,8 @@
 #include <stdint.h>
 #include "Gpio.h"
 #include "stm32f4xx_hal.h"
+// #include "stm32f4xx_hal.h"
+
 #include "stm32f401xe.h"
 #include "Nvic.h"
 #include "Std_Types.h"
@@ -14,42 +16,42 @@
 extern last_execution_time;
 
 
+
 void WDGDrv_Init(void)
 {
 
-    WWDG_CR |= (1<<6); // set bit 6 
-    WWDG_CR |= (1<<7); // set bit 6 
+    WDG->CR |= (1<<7); // set bit 7 to enable Watchdog
+    WDG->CR |= (1<<6); // set bit 6 to avoid generating an immediate reset.
 
     // //set max timeout to be 50
     // WDG->CR &= ~(0x3F);  // clear the t[5:0] bits 0011 1111
-    // // WDG->CR |= (((APB1_freq*1000 * 50) / (4096 * 8) - 1 ) & 0x3F );  
-    // // WDG->CR |= (((30 *1000 * 50) / (4096 * 8) - 1 )  );  
-    WWDG_CR |= 0x3f;
+    // uint32 APB1_freq = HAL_RCC_GetPCLK1Freq(); 
+    // WDG->CR |= (((APB1_freq*1000 * 50) / (4096 * 8) - 1 ) & 0x3F );  
+    // WDG->CR |= (((30 *1000 * 50) / (4096 * 8) - 1 )  );   //tWWDG = tPCLK1 × 4096 × 2WDGTB[1:0] × (T[5:0] + 1) 
+                                                          // 30 is from  Table 64 in data sheet till we find the APB1_freq
+    WDG->CR |= 0x3f;  // this is just to debug why the reset keep happening
+    Nvic_EnableInterrupt(0);
 
 
-    // // CR |=(0xff);
+    // // WDG->CR |=(0xff);
 
 
     // //enable the early interupt , make the WDGTB to 3 (look at table 64) , Disable window maode by making the window val = upper limit
 
-    // CFR |=(0x3ff);
-
-
-    WWDG_CFR |= 0x7F; // 0x7F in binary is 0111 1111, which sets bits 0 to 6
+    // WDG->CFR |=(0x3ff);
+    
+    WDG->CFR |= 0x7F; // 0x7F in binary is 0111 1111, which sets bits 0 to 6
 
     // Set bits 7 and 8
-    // WWDG_CFR |= (1 << 7) | (1 << 8);
-    WWDG_CFR |= (1 << 9);
-    WWDG_CFR |= (1 << 8);
-    WWDG_CFR |= (1 << 7);
+    WDG->CFR |= (1 << 7) | (1 << 8);
+    WDG->CFR |= (1 << 9);
 
-    // SR &= ~(1<<0);
+    // WDG->SR &= ~(1<<0);
 
     // WDG->CR |= (1<<7); // set bit 7 to activate the WDG  should be last step
 
 
 
-    Nvic_EnableInterrupt(0);
 // WDG->CR |= (1 << 7); // set WDGA bit
 //     WDG->CR |= (1 << 6); // set T[6]
 
@@ -100,10 +102,15 @@ void WDGDrv_Init(void)
 //     WDG->CR |= 0x7F;  
     
 // }
-void watchdog_refresh()
-{
-    // WDG->CR = (0x40UL << 0U) | (63u << 0U);
-}
+
+
+
+// void watchdog_refresh()
+// {
+//     WDG->CR = (0x40UL << 0U) | (63u << 0U);
+// }
+
+
 void WWDG_IRQHandler(void){
     //uint32 current_time = HAL_GetTick();
     // WDG->SR &= ~(1<<0);
@@ -126,6 +133,9 @@ void WWDG_IRQHandler(void){
 
     if ( 1) // Check if the early wakeup interrupt flag is set
     {
+        WDG->CR |= 0x3f;  // this is just to debug why the reset keep happening
+
+
         // WDG->SR &= ~(1 << 0); // Clear the early wakeup interrupt flag
 
         // Your ISR code here (e.g., refresh the watchdog, handle the event)
