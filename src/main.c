@@ -46,9 +46,9 @@ int main(void){
 
     	delay(10);
 
+        // WDG->CR |= 0x3f;  // this is just to debug why the reset keep happening
     	// HAL_Delay(10);  
         LEDM_Manage();
-        // WDG->CR |= 0x3f;  // this is just to debug why the reset keep happening
 
         // Call WDGM_MainFunction every 20ms
         delay(20);

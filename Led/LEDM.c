@@ -14,8 +14,8 @@ static void delay(uint32 time){
     //  watchdog_refresh();
     for ( i = 0 ; i<time;i++){
     // WDG->CR |= 0xFF; //0111 1111
-    }
     //  watchdog_refresh();
+    }
 }
 
 
@@ -29,7 +29,7 @@ void LEDM_Manage(void)
 {
 
     //HAL_Delay(500);
-	delay(500);
+	delay(50);
     led_state = ~led_state;
     GPIO_Write(LED_PIN_ID, led_state);
     WDGM_AlivenessIndication(); // to count the number of function calls

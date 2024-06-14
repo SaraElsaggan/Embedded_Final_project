@@ -23,5 +23,5 @@ typedef struct {
 void watchdog_refresh();
 // void refresh(void);
 void WDGDrv_Init(void);
-// void WWDG_IRQHandler(void);
+void WWDG_IRQHandler(void);
 #endif
