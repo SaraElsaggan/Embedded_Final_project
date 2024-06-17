@@ -18,12 +18,20 @@ Discarded input sections
  .text          0x00000000        0x0 ./system/src/stm32f4-hal/stm32f4xx_hal.o
  .data          0x00000000        0x0 ./system/src/stm32f4-hal/stm32f4xx_hal.o
  .bss           0x00000000        0x0 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .text.HAL_MspInit
+                0x00000000        0x2 ./system/src/stm32f4-hal/stm32f4xx_hal.o
  .text.HAL_MspDeInit
                 0x00000000        0x2 ./system/src/stm32f4-hal/stm32f4xx_hal.o
  .text.HAL_DeInit
                 0x00000000       0x2c ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .text.HAL_InitTick
+                0x00000000       0x48 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .text.HAL_Init
+                0x00000000       0x34 ./system/src/stm32f4-hal/stm32f4xx_hal.o
  .text.HAL_IncTick
                 0x00000000       0x18 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .text.HAL_GetTick
+                0x00000000        0xc ./system/src/stm32f4-hal/stm32f4xx_hal.o
  .text.HAL_GetTickPrio
                 0x00000000        0xc ./system/src/stm32f4-hal/stm32f4xx_hal.o
  .text.HAL_SetTickFreq
@@ -64,15 +72,36 @@ Discarded input sections
                 0x00000000        0xc ./system/src/stm32f4-hal/stm32f4xx_hal.o
  .text.HAL_GetUIDw2
                 0x00000000        0xc ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .bss.uwTick    0x00000000        0x4 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .data.uwTickFreq
+                0x00000000        0x1 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .data.uwTickPrio
+                0x00000000        0x4 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .debug_info    0x00000000      0xa86 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .debug_abbrev  0x00000000      0x29c ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .debug_loc     0x00000000      0x1d9 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .debug_aranges
+                0x00000000       0xe8 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .debug_ranges  0x00000000       0xd8 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .debug_line    0x00000000      0x513 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .debug_str     0x00000000      0xa22 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .comment       0x00000000       0x4a ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .debug_frame   0x00000000      0x1f4 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .ARM.attributes
+                0x00000000       0x2e ./system/src/stm32f4-hal/stm32f4xx_hal.o
  .text          0x00000000        0x0 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
  .data          0x00000000        0x0 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
  .bss           0x00000000        0x0 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
+ .text.HAL_NVIC_SetPriorityGrouping
+                0x00000000       0x24 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
  .text.HAL_NVIC_EnableIRQ
                 0x00000000       0x1c ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
  .text.HAL_NVIC_DisableIRQ
                 0x00000000       0x28 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
  .text.HAL_NVIC_SystemReset
                 0x00000000       0x24 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
+ .text.HAL_SYSTICK_Config
+                0x00000000       0x28 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
  .text.HAL_MPU_Disable
                 0x00000000       0x1c ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
  .text.HAL_MPU_Enable
@@ -452,13 +481,39 @@ Discarded input sections
  .text          0x00000000        0x0 ./WatchDog/WDGDRV.o
  .data          0x00000000        0x0 ./WatchDog/WDGDRV.o
  .bss           0x00000000        0x0 ./WatchDog/WDGDRV.o
- .text.watchdog_refresh
-                0x00000000       0x18 ./WatchDog/WDGDRV.o
+ .bss.cfr       0x00000000        0x4 ./WatchDog/WDGDRV.o
+ .bss.cr        0x00000000        0x4 ./WatchDog/WDGDRV.o
+ .bss.sr        0x00000000        0x4 ./WatchDog/WDGDRV.o
  .text          0x00000000        0x0 ./WatchDog/WDGM.o
  .data          0x00000000        0x0 ./WatchDog/WDGM.o
  .bss           0x00000000        0x0 ./WatchDog/WDGM.o
+ .text.WDGM_Init
+                0x00000000       0x30 ./WatchDog/WDGM.o
+ .text.WDGM_MainFunction
+                0x00000000       0x40 ./WatchDog/WDGM.o
  .text.WDGM_PovideSuppervisionStatus
                 0x00000000        0xc ./WatchDog/WDGM.o
+ .text.WDGM_AlivenessIndication
+                0x00000000       0x10 ./WatchDog/WDGM.o
+ .bss.last_execution_time
+                0x00000000        0x4 ./WatchDog/WDGM.o
+ .bss.led_no_calls
+                0x00000000        0x4 ./WatchDog/WDGM.o
+ .bss.start_time
+                0x00000000        0x4 ./WatchDog/WDGM.o
+ .bss.status    0x00000000        0x1 ./WatchDog/WDGM.o
+ .debug_info    0x00000000      0x1a5 ./WatchDog/WDGM.o
+ .debug_abbrev  0x00000000      0x100 ./WatchDog/WDGM.o
+ .debug_loc     0x00000000       0x55 ./WatchDog/WDGM.o
+ .debug_aranges
+                0x00000000       0x38 ./WatchDog/WDGM.o
+ .debug_ranges  0x00000000       0x28 ./WatchDog/WDGM.o
+ .debug_line    0x00000000      0x18f ./WatchDog/WDGM.o
+ .debug_str     0x00000000      0x27b ./WatchDog/WDGM.o
+ .comment       0x00000000       0x4a ./WatchDog/WDGM.o
+ .debug_frame   0x00000000       0x60 ./WatchDog/WDGM.o
+ .ARM.attributes
+                0x00000000       0x2e ./WatchDog/WDGM.o
  .text          0x00000000        0x0 ./Rcc/Rcc.o
  .data          0x00000000        0x0 ./Rcc/Rcc.o
  .bss           0x00000000        0x0 ./Rcc/Rcc.o
@@ -474,9 +529,45 @@ Discarded input sections
  .text          0x00000000        0x0 ./Led/LEDM.o
  .data          0x00000000        0x0 ./Led/LEDM.o
  .bss           0x00000000        0x0 ./Led/LEDM.o
+ .text.LEDM_Init
+                0x00000000       0x14 ./Led/LEDM.o
+ .text.LEDM_Manage
+                0x00000000       0x38 ./Led/LEDM.o
+ .bss.led_state
+                0x00000000        0x1 ./Led/LEDM.o
+ .debug_info    0x00000000      0x192 ./Led/LEDM.o
+ .debug_abbrev  0x00000000      0x118 ./Led/LEDM.o
+ .debug_loc     0x00000000       0xa0 ./Led/LEDM.o
+ .debug_aranges
+                0x00000000       0x28 ./Led/LEDM.o
+ .debug_ranges  0x00000000       0x38 ./Led/LEDM.o
+ .debug_line    0x00000000      0x1ad ./Led/LEDM.o
+ .debug_str     0x00000000      0x226 ./Led/LEDM.o
+ .comment       0x00000000       0x4a ./Led/LEDM.o
+ .debug_frame   0x00000000       0x48 ./Led/LEDM.o
+ .ARM.attributes
+                0x00000000       0x2e ./Led/LEDM.o
  .text          0x00000000        0x0 ./Gpio/GPIO.o
  .data          0x00000000        0x0 ./Gpio/GPIO.o
  .bss           0x00000000        0x0 ./Gpio/GPIO.o
+ .text.GPIO_Init
+                0x00000000       0x20 ./Gpio/GPIO.o
+ .text.GPIO_Write
+                0x00000000       0x20 ./Gpio/GPIO.o
+ .data.GPIO_Addresses
+                0x00000000        0x8 ./Gpio/GPIO.o
+ .debug_info    0x00000000      0x1d5 ./Gpio/GPIO.o
+ .debug_abbrev  0x00000000       0xed ./Gpio/GPIO.o
+ .debug_loc     0x00000000       0x80 ./Gpio/GPIO.o
+ .debug_aranges
+                0x00000000       0x28 ./Gpio/GPIO.o
+ .debug_ranges  0x00000000       0x18 ./Gpio/GPIO.o
+ .debug_line    0x00000000       0xfe ./Gpio/GPIO.o
+ .debug_str     0x00000000      0x268 ./Gpio/GPIO.o
+ .comment       0x00000000       0x4a ./Gpio/GPIO.o
+ .debug_frame   0x00000000       0x38 ./Gpio/GPIO.o
+ .ARM.attributes
+                0x00000000       0x2e ./Gpio/GPIO.o
  .text          0x00000000       0xa0 c:/users/sara/downloads/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_ldivmod.o)
  .data          0x00000000        0x0 c:/users/sara/downloads/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_ldivmod.o)
  .bss           0x00000000        0x0 c:/users/sara/downloads/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_ldivmod.o)
@@ -583,7 +674,7 @@ END GROUP
                 0x2000fc00                __Main_Stack_Limit = (__stack - __Main_Stack_Size)
                 [!provide]                PROVIDE (_Main_Stack_Limit = __Main_Stack_Limit)
                 0x00000100                _Minimum_Stack_Size = 0x100
-                0x20000040                PROVIDE (_Heap_Begin = _end_noinit)
+                0x20000024                PROVIDE (_Heap_Begin = _end_noinit)
                 0x2000fc00                PROVIDE (_Heap_Limit = (__stack - __Main_Stack_Size))
 
 .isr_vector     0x08000000      0x2c6
@@ -674,16 +765,16 @@ END GROUP
 
 .inits          0x080002c8       0x28
                 0x080002c8                __data_regions_array_start = .
-                0x080002c8        0x4 LONG 0x8000780 LOADADDR (.data)
+                0x080002c8        0x4 LONG 0x8000578 LOADADDR (.data)
                 0x080002cc        0x4 LONG 0x20000000 ADDR (.data)
-                0x080002d0        0x4 LONG 0x20000028 (ADDR (.data) + SIZEOF (.data))
-                0x080002d4        0x4 LONG 0x8000780 LOADADDR (.data_CCMRAM)
+                0x080002d0        0x4 LONG 0x20000018 (ADDR (.data) + SIZEOF (.data))
+                0x080002d4        0x4 LONG 0x8000578 LOADADDR (.data_CCMRAM)
                 0x080002d8        0x4 LONG 0x10000000 ADDR (.data_CCMRAM)
                 0x080002dc        0x4 LONG 0x10000000 (ADDR (.data_CCMRAM) + SIZEOF (.data_CCMRAM))
                 0x080002e0                __data_regions_array_end = .
                 0x080002e0                __bss_regions_array_start = .
-                0x080002e0        0x4 LONG 0x20000028 ADDR (.bss)
-                0x080002e4        0x4 LONG 0x20000040 (ADDR (.bss) + SIZEOF (.bss))
+                0x080002e0        0x4 LONG 0x20000018 ADDR (.bss)
+                0x080002e4        0x4 LONG 0x20000024 (ADDR (.bss) + SIZEOF (.bss))
                 0x080002e8        0x4 LONG 0x10000000 ADDR (.bss_CCMRAM)
                 0x080002ec        0x4 LONG 0x10000000 (ADDR (.bss_CCMRAM) + SIZEOF (.bss_CCMRAM))
                 0x080002f0                __bss_regions_array_end = .
@@ -709,208 +800,149 @@ END GROUP
 .flashtext
  *(.flashtext .flashtext.*)
 
-.text           0x080002f0      0x490
+.text           0x080002f0      0x288
  *(.text .text.*)
- .text.HAL_MspInit
-                0x080002f0        0x2 ./system/src/stm32f4-hal/stm32f4xx_hal.o
-                0x080002f0                HAL_MspInit
- *fill*         0x080002f2        0x2 
- .text.HAL_InitTick
-                0x080002f4       0x48 ./system/src/stm32f4-hal/stm32f4xx_hal.o
-                0x080002f4                HAL_InitTick
- .text.HAL_Init
-                0x0800033c       0x34 ./system/src/stm32f4-hal/stm32f4xx_hal.o
-                0x0800033c                HAL_Init
- .text.HAL_GetTick
-                0x08000370        0xc ./system/src/stm32f4-hal/stm32f4xx_hal.o
-                0x08000370                HAL_GetTick
- .text.HAL_NVIC_SetPriorityGrouping
-                0x0800037c       0x24 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
-                0x0800037c                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x080003a0       0x64 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
-                0x080003a0                HAL_NVIC_SetPriority
- .text.HAL_SYSTICK_Config
-                0x08000404       0x28 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
-                0x08000404                HAL_SYSTICK_Config
- .text._exit    0x0800042c        0x6 ./system/src/newlib/exit.o
-                0x0800042c                _exit
- *fill*         0x08000432        0x2 
+                0x080002f0       0x64 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
+                0x080002f0                HAL_NVIC_SetPriority
+ .text._exit    0x08000354        0x6 ./system/src/newlib/exit.o
+                0x08000354                _exit
+ *fill*         0x0800035a        0x2 
  .text.__initialize_args
-                0x08000434       0x10 ./system/src/newlib/syscalls.o
-                0x08000434                __initialize_args
+                0x0800035c       0x10 ./system/src/newlib/syscalls.o
+                0x0800035c                __initialize_args
  .text.__initialize_hardware_early
-                0x08000444       0x18 ./system/src/cortexm/initialize-hardware.o
-                0x08000444                __initialize_hardware_early
+                0x0800036c       0x18 ./system/src/cortexm/initialize-hardware.o
+                0x0800036c                __initialize_hardware_early
  .text.__initialize_hardware
-                0x0800045c        0x4 ./system/src/cortexm/initialize-hardware.o
-                0x0800045c                __initialize_hardware
+                0x08000384        0x4 ./system/src/cortexm/initialize-hardware.o
+                0x08000384                __initialize_hardware
  .text.__reset_hardware
-                0x08000460       0x24 ./system/src/cortexm/reset-hardware.o
-                0x08000460                __reset_hardware
+                0x08000388       0x24 ./system/src/cortexm/reset-hardware.o
+                0x08000388                __reset_hardware
  .text.SystemInit
-                0x08000484       0x10 ./system/src/cmsis/system_stm32f4xx.o
-                0x08000484                SystemInit
+                0x080003ac       0x10 ./system/src/cmsis/system_stm32f4xx.o
+                0x080003ac                SystemInit
  .text.SystemCoreClockUpdate
-                0x08000494       0x74 ./system/src/cmsis/system_stm32f4xx.o
-                0x08000494                SystemCoreClockUpdate
+                0x080003bc       0x74 ./system/src/cmsis/system_stm32f4xx.o
+                0x080003bc                SystemCoreClockUpdate
  .text.startup.main
-                0x08000508       0x56 ./src/main.o
-                0x08000508                main
- *fill*         0x0800055e        0x2 
+                0x08000430       0x18 ./src/main.o
+                0x08000430                main
  .text.WDGDrv_Init
-                0x08000560       0x28 ./WatchDog/WDGDRV.o
-                0x08000560                WDGDrv_Init
+                0x08000448       0x3c ./WatchDog/WDGDRV.o
+                0x08000448                WDGDrv_Init
  .text.WWDG_IRQHandler
-                0x08000588       0x44 ./WatchDog/WDGDRV.o
-                0x08000588                WWDG_IRQHandler
- .text.WDGM_Init
-                0x080005cc       0x30 ./WatchDog/WDGM.o
-                0x080005cc                WDGM_Init
- .text.WDGM_MainFunction
-                0x080005fc       0x40 ./WatchDog/WDGM.o
-                0x080005fc                WDGM_MainFunction
- .text.WDGM_AlivenessIndication
-                0x0800063c       0x10 ./WatchDog/WDGM.o
-                0x0800063c                WDGM_AlivenessIndication
+                0x08000484       0x4c ./WatchDog/WDGDRV.o
+                0x08000484                WWDG_IRQHandler
  .text.Rcc_Init
-                0x0800064c       0x14 ./Rcc/Rcc.o
-                0x0800064c                Rcc_Init
+                0x080004d0       0x14 ./Rcc/Rcc.o
+                0x080004d0                Rcc_Init
  .text.Rcc_Enable
-                0x08000660       0x60 ./Rcc/Rcc.o
-                0x08000660                Rcc_Enable
+                0x080004e4       0x60 ./Rcc/Rcc.o
+                0x080004e4                Rcc_Enable
  .text.Nvic_EnableInterrupt
-                0x080006c0       0x24 ./Nvic/Nvic.o
-                0x080006c0                Nvic_EnableInterrupt
- .text.LEDM_Init
-                0x080006e4       0x14 ./Led/LEDM.o
-                0x080006e4                LEDM_Init
- .text.LEDM_Manage
-                0x080006f8       0x38 ./Led/LEDM.o
-                0x080006f8                LEDM_Manage
- .text.GPIO_Init
-                0x08000730       0x20 ./Gpio/GPIO.o
-                0x08000730                GPIO_Init
- .text.GPIO_Write
-                0x08000750       0x20 ./Gpio/GPIO.o
-                0x08000750                GPIO_Write
+                0x08000544       0x24 ./Nvic/Nvic.o
+                0x08000544                Nvic_EnableInterrupt
  *(.rodata .rodata.* .constdata .constdata.*)
  .rodata.AHBPrescTable
-                0x08000770       0x10 ./system/src/cmsis/system_stm32f4xx.o
-                0x08000770                AHBPrescTable
+                0x08000568       0x10 ./system/src/cmsis/system_stm32f4xx.o
+                0x08000568                AHBPrescTable
  *(vtable)
  *(.eh_frame*)
  *(.glue_7)
- .glue_7        0x08000780        0x0 linker stubs
+ .glue_7        0x08000578        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08000780        0x0 linker stubs
+ .glue_7t       0x08000578        0x0 linker stubs
 
-.vfp11_veneer   0x08000780        0x0
- .vfp11_veneer  0x08000780        0x0 linker stubs
+.vfp11_veneer   0x08000578        0x0
+ .vfp11_veneer  0x08000578        0x0 linker stubs
 
-.v4_bx          0x08000780        0x0
- .v4_bx         0x08000780        0x0 linker stubs
+.v4_bx          0x08000578        0x0
+ .v4_bx         0x08000578        0x0 linker stubs
 
-.iplt           0x08000780        0x0
- .iplt          0x08000780        0x0 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+.iplt           0x08000578        0x0
+ .iplt          0x08000578        0x0 ./system/src/newlib/exit.o
 
-.rel.dyn        0x08000780        0x0
- .rel.iplt      0x08000780        0x0 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+.rel.dyn        0x08000578        0x0
+ .rel.iplt      0x08000578        0x0 ./system/src/newlib/exit.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08000780                . = ALIGN (0x4)
-                0x08000780                __exidx_start = .
+                0x08000578                . = ALIGN (0x4)
+                0x08000578                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x08000780                __exidx_end = .
-                0x08000780                . = ALIGN (0x4)
-                0x08000780                _etext = .
-                0x08000780                __etext = .
+                0x08000578                __exidx_end = .
+                0x08000578                . = ALIGN (0x4)
+                0x08000578                _etext = .
+                0x08000578                __etext = .
 
-.data_CCMRAM    0x10000000        0x0 load address 0x08000780
+.data_CCMRAM    0x10000000        0x0 load address 0x08000578
  FILL mask 0xff
  *(.data.CCMRAM .data.CCMRAM.*)
                 0x10000000                . = ALIGN (0x4)
-                0x08000780                _sidata = LOADADDR (.data)
+                0x08000578                _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x28 load address 0x08000780
+.data           0x20000000       0x18 load address 0x08000578
  FILL mask 0xff
                 0x20000000                _sdata = .
                 0x20000000                __data_start__ = .
  *(.data_begin .data_begin.*)
  *(.data .data.*)
- .data.uwTickFreq
-                0x20000000        0x1 ./system/src/stm32f4-hal/stm32f4xx_hal.o
-                0x20000000                uwTickFreq
- *fill*         0x20000001        0x3 ff
- .data.uwTickPrio
-                0x20000004        0x4 ./system/src/stm32f4-hal/stm32f4xx_hal.o
-                0x20000004                uwTickPrio
- .data.argv.1   0x20000008        0x8 ./system/src/newlib/syscalls.o
+ .data.argv.1   0x20000000        0x8 ./system/src/newlib/syscalls.o
  .data.SystemCoreClock
-                0x20000010        0x4 ./system/src/cmsis/system_stm32f4xx.o
-                0x20000010                SystemCoreClock
+                0x20000008        0x4 ./system/src/cmsis/system_stm32f4xx.o
+                0x20000008                SystemCoreClock
  .data.NVIC_ISER
-                0x20000014        0xc ./Nvic/Nvic.o
-                0x20000014                NVIC_ISER
- .data.GPIO_Addresses
-                0x20000020        0x8 ./Gpio/GPIO.o
-                0x20000020                GPIO_Addresses
+                0x2000000c        0xc ./Nvic/Nvic.o
+                0x2000000c                NVIC_ISER
  *(.data_end .data_end.*)
-                0x20000028                . = ALIGN (0x4)
-                0x20000028                _edata = .
-                0x20000028                __data_end__ = .
+                0x20000018                . = ALIGN (0x4)
+                0x20000018                _edata = .
+                0x20000018                __data_end__ = .
 
-.igot.plt       0x20000028        0x0 load address 0x080007a8
- .igot.plt      0x20000028        0x0 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+.igot.plt       0x20000018        0x0 load address 0x08000590
+ .igot.plt      0x20000018        0x0 ./system/src/newlib/exit.o
 
 .bss_CCMRAM     0x10000000        0x0
  *(.bss.CCMRAM .bss.CCMRAM.*)
 
-.bss            0x20000028       0x18
-                0x20000028                __bss_start__ = .
-                0x20000028                _sbss = .
+.bss            0x20000018        0xc
+                0x20000018                __bss_start__ = .
+                0x20000018                _sbss = .
  *(.bss_begin .bss_begin.*)
  *(.bss .bss.*)
- .bss.uwTick    0x20000028        0x4 ./system/src/stm32f4-hal/stm32f4xx_hal.o
-                0x20000028                uwTick
- .bss.name.0    0x2000002c        0x1 ./system/src/newlib/syscalls.o
- *fill*         0x2000002d        0x3 
- .bss.last_execution_time
-                0x20000030        0x4 ./WatchDog/WDGM.o
-                0x20000030                last_execution_time
- .bss.led_no_calls
-                0x20000034        0x4 ./WatchDog/WDGM.o
- .bss.start_time
-                0x20000038        0x4 ./WatchDog/WDGM.o
- .bss.status    0x2000003c        0x1 ./WatchDog/WDGM.o
- .bss.led_state
-                0x2000003d        0x1 ./Led/LEDM.o
+ .bss.name.0    0x20000018        0x1 ./system/src/newlib/syscalls.o
+ *fill*         0x20000019        0x3 
+ .bss.cfr_value
+                0x2000001c        0x4 ./WatchDog/WDGDRV.o
+                0x2000001c                cfr_value
+ .bss.x         0x20000020        0x4 ./WatchDog/WDGDRV.o
+                0x20000020                x
  *(COMMON)
  *(.bss_end .bss_end.*)
-                0x20000040                . = ALIGN (0x4)
- *fill*         0x2000003e        0x2 
-                0x20000040                __bss_end__ = .
-                0x20000040                _ebss = .
+                0x20000024                . = ALIGN (0x4)
+                0x20000024                __bss_end__ = .
+                0x20000024                _ebss = .
 
 .noinit_CCMRAM
  *(.noinit.CCMRAM .noinit.CCMRAM.*)
 
-.noinit         0x20000040        0x0
-                0x20000040                _noinit = .
+.noinit         0x20000024        0x0
+                0x20000024                _noinit = .
  *(.noinit .noinit.*)
-                0x20000040                . = ALIGN (0x4)
-                0x20000040                _end_noinit = .
+                0x20000024                . = ALIGN (0x4)
+                0x20000024                _end_noinit = .
                 [!provide]                PROVIDE (end = _end_noinit)
                 [!provide]                PROVIDE (_end = _end_noinit)
                 [!provide]                PROVIDE (__end = _end_noinit)
                 [!provide]                PROVIDE (__end__ = _end_noinit)
 
-._check_stack   0x20000040      0x100
-                0x20000140                . = (. + _Minimum_Stack_Size)
- *fill*         0x20000040      0x100 
+._check_stack   0x20000024      0x100
+                0x20000124                . = (. + _Minimum_Stack_Size)
+ *fill*         0x20000024      0x100 
 
 .b1text
  *(.b1text)
@@ -957,9 +989,8 @@ END GROUP
 
 .comment        0x00000000       0x49
  *(.comment)
- .comment       0x00000000       0x49 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+ .comment       0x00000000       0x49 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
                                  0x4a (size before relaxing)
- .comment       0x00000049       0x4a ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
  .comment       0x00000049       0x4a ./system/src/newlib/exit.o
  .comment       0x00000049       0x4a ./system/src/newlib/startup.o
  .comment       0x00000049       0x4a ./system/src/newlib/syscalls.o
@@ -970,48 +1001,37 @@ END GROUP
  .comment       0x00000049       0x4a ./system/src/cmsis/vectors_stm32f401xe.o
  .comment       0x00000049       0x4a ./src/main.o
  .comment       0x00000049       0x4a ./WatchDog/WDGDRV.o
- .comment       0x00000049       0x4a ./WatchDog/WDGM.o
  .comment       0x00000049       0x4a ./Rcc/Rcc.o
  .comment       0x00000049       0x4a ./Nvic/Nvic.o
- .comment       0x00000049       0x4a ./Led/LEDM.o
- .comment       0x00000049       0x4a ./Gpio/GPIO.o
 
 .ARM.attributes
                 0x00000000       0x2e
  .ARM.attributes
-                0x00000000       0x2e ./system/src/stm32f4-hal/stm32f4xx_hal.o
+                0x00000000       0x2e ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
  .ARM.attributes
-                0x0000002e       0x2e ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
+                0x0000002e       0x2e ./system/src/newlib/exit.o
  .ARM.attributes
-                0x0000005c       0x2e ./system/src/newlib/exit.o
+                0x0000005c       0x2e ./system/src/newlib/startup.o
  .ARM.attributes
-                0x0000008a       0x2e ./system/src/newlib/startup.o
+                0x0000008a       0x2e ./system/src/newlib/syscalls.o
  .ARM.attributes
-                0x000000b8       0x2e ./system/src/newlib/syscalls.o
+                0x000000b8       0x2e ./system/src/cortexm/exception-handlers.o
  .ARM.attributes
-                0x000000e6       0x2e ./system/src/cortexm/exception-handlers.o
+                0x000000e6       0x2e ./system/src/cortexm/initialize-hardware.o
  .ARM.attributes
-                0x00000114       0x2e ./system/src/cortexm/initialize-hardware.o
+                0x00000114       0x2e ./system/src/cortexm/reset-hardware.o
  .ARM.attributes
-                0x00000142       0x2e ./system/src/cortexm/reset-hardware.o
+                0x00000142       0x2e ./system/src/cmsis/system_stm32f4xx.o
  .ARM.attributes
-                0x00000170       0x2e ./system/src/cmsis/system_stm32f4xx.o
+                0x00000170       0x2e ./system/src/cmsis/vectors_stm32f401xe.o
  .ARM.attributes
-                0x0000019e       0x2e ./system/src/cmsis/vectors_stm32f401xe.o
+                0x0000019e       0x2e ./src/main.o
  .ARM.attributes
-                0x000001cc       0x2e ./src/main.o
+                0x000001cc       0x2e ./WatchDog/WDGDRV.o
  .ARM.attributes
-                0x000001fa       0x2e ./WatchDog/WDGDRV.o
+                0x000001fa       0x2e ./Rcc/Rcc.o
  .ARM.attributes
-                0x00000228       0x2e ./WatchDog/WDGM.o
- .ARM.attributes
-                0x00000256       0x2e ./Rcc/Rcc.o
- .ARM.attributes
-                0x00000284       0x2e ./Nvic/Nvic.o
- .ARM.attributes
-                0x000002b2       0x2e ./Led/LEDM.o
- .ARM.attributes
-                0x000002e0       0x2e ./Gpio/GPIO.o
+                0x00000228       0x2e ./Nvic/Nvic.o
 
 .debug
  *(.debug)
@@ -1025,180 +1045,144 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x468
+.debug_aranges  0x00000000      0x2f0
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0xe8 ./system/src/stm32f4-hal/stm32f4xx_hal.o
+                0x00000000       0xa8 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
  .debug_aranges
-                0x000000e8       0xa8 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
+                0x000000a8       0x28 ./system/src/newlib/exit.o
  .debug_aranges
-                0x00000190       0x28 ./system/src/newlib/exit.o
+                0x000000d0       0x40 ./system/src/newlib/startup.o
  .debug_aranges
-                0x000001b8       0x40 ./system/src/newlib/startup.o
+                0x00000110       0x30 ./system/src/newlib/syscalls.o
  .debug_aranges
-                0x000001f8       0x30 ./system/src/newlib/syscalls.o
+                0x00000140       0x80 ./system/src/cortexm/exception-handlers.o
  .debug_aranges
-                0x00000228       0x80 ./system/src/cortexm/exception-handlers.o
+                0x000001c0       0x28 ./system/src/cortexm/initialize-hardware.o
  .debug_aranges
-                0x000002a8       0x28 ./system/src/cortexm/initialize-hardware.o
+                0x000001e8       0x20 ./system/src/cortexm/reset-hardware.o
  .debug_aranges
-                0x000002d0       0x20 ./system/src/cortexm/reset-hardware.o
+                0x00000208       0x28 ./system/src/cmsis/system_stm32f4xx.o
  .debug_aranges
-                0x000002f0       0x28 ./system/src/cmsis/system_stm32f4xx.o
+                0x00000230       0x20 ./system/src/cmsis/vectors_stm32f401xe.o
  .debug_aranges
-                0x00000318       0x20 ./system/src/cmsis/vectors_stm32f401xe.o
+                0x00000250       0x20 ./src/main.o
  .debug_aranges
-                0x00000338       0x20 ./src/main.o
+                0x00000270       0x28 ./WatchDog/WDGDRV.o
  .debug_aranges
-                0x00000358       0x30 ./WatchDog/WDGDRV.o
+                0x00000298       0x30 ./Rcc/Rcc.o
  .debug_aranges
-                0x00000388       0x38 ./WatchDog/WDGM.o
- .debug_aranges
-                0x000003c0       0x30 ./Rcc/Rcc.o
- .debug_aranges
-                0x000003f0       0x28 ./Nvic/Nvic.o
- .debug_aranges
-                0x00000418       0x28 ./Led/LEDM.o
- .debug_aranges
-                0x00000440       0x28 ./Gpio/GPIO.o
+                0x000002c8       0x28 ./Nvic/Nvic.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x3e66
+.debug_info     0x00000000     0x2fb8
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0xa86 ./system/src/stm32f4-hal/stm32f4xx_hal.o
- .debug_info    0x00000a86     0x109d ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
- .debug_info    0x00001b23      0x11b ./system/src/newlib/exit.o
- .debug_info    0x00001c3e      0x549 ./system/src/newlib/startup.o
- .debug_info    0x00002187      0x1e7 ./system/src/newlib/syscalls.o
- .debug_info    0x0000236e      0x2e8 ./system/src/cortexm/exception-handlers.o
- .debug_info    0x00002656      0x2ee ./system/src/cortexm/initialize-hardware.o
- .debug_info    0x00002944      0x2ef ./system/src/cortexm/reset-hardware.o
- .debug_info    0x00002c33      0x5cd ./system/src/cmsis/system_stm32f4xx.o
- .debug_info    0x00003200       0xd6 ./system/src/cmsis/vectors_stm32f401xe.o
- .debug_info    0x000032d6      0x23e ./src/main.o
- .debug_info    0x00003514      0x160 ./WatchDog/WDGDRV.o
- .debug_info    0x00003674      0x1a5 ./WatchDog/WDGM.o
- .debug_info    0x00003819      0x158 ./Rcc/Rcc.o
- .debug_info    0x00003971      0x18e ./Nvic/Nvic.o
- .debug_info    0x00003aff      0x192 ./Led/LEDM.o
- .debug_info    0x00003c91      0x1d5 ./Gpio/GPIO.o
+ .debug_info    0x00000000     0x109d ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
+ .debug_info    0x0000109d      0x11b ./system/src/newlib/exit.o
+ .debug_info    0x000011b8      0x549 ./system/src/newlib/startup.o
+ .debug_info    0x00001701      0x1e7 ./system/src/newlib/syscalls.o
+ .debug_info    0x000018e8      0x2e8 ./system/src/cortexm/exception-handlers.o
+ .debug_info    0x00001bd0      0x2ee ./system/src/cortexm/initialize-hardware.o
+ .debug_info    0x00001ebe      0x2ef ./system/src/cortexm/reset-hardware.o
+ .debug_info    0x000021ad      0x5cd ./system/src/cmsis/system_stm32f4xx.o
+ .debug_info    0x0000277a       0xd6 ./system/src/cmsis/vectors_stm32f401xe.o
+ .debug_info    0x00002850      0x13f ./src/main.o
+ .debug_info    0x0000298f      0x343 ./WatchDog/WDGDRV.o
+ .debug_info    0x00002cd2      0x158 ./Rcc/Rcc.o
+ .debug_info    0x00002e2a      0x18e ./Nvic/Nvic.o
 
-.debug_abbrev   0x00000000     0x1532
+.debug_abbrev   0x00000000      0xf48
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x29c ./system/src/stm32f4-hal/stm32f4xx_hal.o
- .debug_abbrev  0x0000029c      0x387 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
- .debug_abbrev  0x00000623       0xcb ./system/src/newlib/exit.o
- .debug_abbrev  0x000006ee      0x1e7 ./system/src/newlib/startup.o
- .debug_abbrev  0x000008d5      0x10e ./system/src/newlib/syscalls.o
- .debug_abbrev  0x000009e3       0xee ./system/src/cortexm/exception-handlers.o
- .debug_abbrev  0x00000ad1      0x113 ./system/src/cortexm/initialize-hardware.o
- .debug_abbrev  0x00000be4      0x10b ./system/src/cortexm/reset-hardware.o
- .debug_abbrev  0x00000cef      0x11b ./system/src/cmsis/system_stm32f4xx.o
- .debug_abbrev  0x00000e0a       0xa4 ./system/src/cmsis/vectors_stm32f401xe.o
- .debug_abbrev  0x00000eae      0x10a ./src/main.o
- .debug_abbrev  0x00000fb8      0x107 ./WatchDog/WDGDRV.o
- .debug_abbrev  0x000010bf      0x100 ./WatchDog/WDGM.o
- .debug_abbrev  0x000011bf       0x8e ./Rcc/Rcc.o
- .debug_abbrev  0x0000124d       0xe0 ./Nvic/Nvic.o
- .debug_abbrev  0x0000132d      0x118 ./Led/LEDM.o
- .debug_abbrev  0x00001445       0xed ./Gpio/GPIO.o
+ .debug_abbrev  0x00000000      0x387 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
+ .debug_abbrev  0x00000387       0xcb ./system/src/newlib/exit.o
+ .debug_abbrev  0x00000452      0x1e7 ./system/src/newlib/startup.o
+ .debug_abbrev  0x00000639      0x10e ./system/src/newlib/syscalls.o
+ .debug_abbrev  0x00000747       0xee ./system/src/cortexm/exception-handlers.o
+ .debug_abbrev  0x00000835      0x113 ./system/src/cortexm/initialize-hardware.o
+ .debug_abbrev  0x00000948      0x10b ./system/src/cortexm/reset-hardware.o
+ .debug_abbrev  0x00000a53      0x11b ./system/src/cmsis/system_stm32f4xx.o
+ .debug_abbrev  0x00000b6e       0xa4 ./system/src/cmsis/vectors_stm32f401xe.o
+ .debug_abbrev  0x00000c12       0xa0 ./src/main.o
+ .debug_abbrev  0x00000cb2      0x128 ./WatchDog/WDGDRV.o
+ .debug_abbrev  0x00000dda       0x8e ./Rcc/Rcc.o
+ .debug_abbrev  0x00000e68       0xe0 ./Nvic/Nvic.o
 
-.debug_line     0x00000000     0x24e2
+.debug_line     0x00000000     0x1b2a
  *(.debug_line)
- .debug_line    0x00000000      0x513 ./system/src/stm32f4-hal/stm32f4xx_hal.o
- .debug_line    0x00000513      0x751 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
- .debug_line    0x00000c64      0x1a0 ./system/src/newlib/exit.o
- .debug_line    0x00000e04      0x336 ./system/src/newlib/startup.o
- .debug_line    0x0000113a      0x1da ./system/src/newlib/syscalls.o
- .debug_line    0x00001314      0x278 ./system/src/cortexm/exception-handlers.o
- .debug_line    0x0000158c      0x154 ./system/src/cortexm/initialize-hardware.o
- .debug_line    0x000016e0      0x16b ./system/src/cortexm/reset-hardware.o
- .debug_line    0x0000184b      0x1e1 ./system/src/cmsis/system_stm32f4xx.o
- .debug_line    0x00001a2c       0x71 ./system/src/cmsis/vectors_stm32f401xe.o
- .debug_line    0x00001a9d      0x291 ./src/main.o
- .debug_line    0x00001d2e      0x1b0 ./WatchDog/WDGDRV.o
- .debug_line    0x00001ede      0x18f ./WatchDog/WDGM.o
- .debug_line    0x0000206d      0x101 ./Rcc/Rcc.o
- .debug_line    0x0000216e       0xcc ./Nvic/Nvic.o
- .debug_line    0x0000223a      0x1aa ./Led/LEDM.o
- .debug_line    0x000023e4       0xfe ./Gpio/GPIO.o
+ .debug_line    0x00000000      0x751 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
+ .debug_line    0x00000751      0x1a0 ./system/src/newlib/exit.o
+ .debug_line    0x000008f1      0x336 ./system/src/newlib/startup.o
+ .debug_line    0x00000c27      0x1da ./system/src/newlib/syscalls.o
+ .debug_line    0x00000e01      0x278 ./system/src/cortexm/exception-handlers.o
+ .debug_line    0x00001079      0x154 ./system/src/cortexm/initialize-hardware.o
+ .debug_line    0x000011cd      0x16b ./system/src/cortexm/reset-hardware.o
+ .debug_line    0x00001338      0x1e1 ./system/src/cmsis/system_stm32f4xx.o
+ .debug_line    0x00001519       0x71 ./system/src/cmsis/vectors_stm32f401xe.o
+ .debug_line    0x0000158a      0x166 ./src/main.o
+ .debug_line    0x000016f0      0x26d ./WatchDog/WDGDRV.o
+ .debug_line    0x0000195d      0x101 ./Rcc/Rcc.o
+ .debug_line    0x00001a5e       0xcc ./Nvic/Nvic.o
 
-.debug_frame    0x00000000      0x7a4
+.debug_frame    0x00000000      0x4c0
  *(.debug_frame)
- .debug_frame   0x00000000      0x1f4 ./system/src/stm32f4-hal/stm32f4xx_hal.o
- .debug_frame   0x000001f4      0x158 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
- .debug_frame   0x0000034c       0x40 ./system/src/newlib/exit.o
- .debug_frame   0x0000038c       0x80 ./system/src/newlib/startup.o
- .debug_frame   0x0000040c       0x50 ./system/src/newlib/syscalls.o
- .debug_frame   0x0000045c       0xe0 ./system/src/cortexm/exception-handlers.o
- .debug_frame   0x0000053c       0x38 ./system/src/cortexm/initialize-hardware.o
- .debug_frame   0x00000574       0x20 ./system/src/cortexm/reset-hardware.o
- .debug_frame   0x00000594       0x30 ./system/src/cmsis/system_stm32f4xx.o
- .debug_frame   0x000005c4       0x20 ./system/src/cmsis/vectors_stm32f401xe.o
- .debug_frame   0x000005e4       0x28 ./src/main.o
- .debug_frame   0x0000060c       0x48 ./WatchDog/WDGDRV.o
- .debug_frame   0x00000654       0x60 ./WatchDog/WDGM.o
- .debug_frame   0x000006b4       0x40 ./Rcc/Rcc.o
- .debug_frame   0x000006f4       0x30 ./Nvic/Nvic.o
- .debug_frame   0x00000724       0x48 ./Led/LEDM.o
- .debug_frame   0x0000076c       0x38 ./Gpio/GPIO.o
+ .debug_frame   0x00000000      0x158 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
+ .debug_frame   0x00000158       0x40 ./system/src/newlib/exit.o
+ .debug_frame   0x00000198       0x80 ./system/src/newlib/startup.o
+ .debug_frame   0x00000218       0x50 ./system/src/newlib/syscalls.o
+ .debug_frame   0x00000268       0xe0 ./system/src/cortexm/exception-handlers.o
+ .debug_frame   0x00000348       0x38 ./system/src/cortexm/initialize-hardware.o
+ .debug_frame   0x00000380       0x20 ./system/src/cortexm/reset-hardware.o
+ .debug_frame   0x000003a0       0x30 ./system/src/cmsis/system_stm32f4xx.o
+ .debug_frame   0x000003d0       0x20 ./system/src/cmsis/vectors_stm32f401xe.o
+ .debug_frame   0x000003f0       0x28 ./src/main.o
+ .debug_frame   0x00000418       0x38 ./WatchDog/WDGDRV.o
+ .debug_frame   0x00000450       0x40 ./Rcc/Rcc.o
+ .debug_frame   0x00000490       0x30 ./Nvic/Nvic.o
 
-.debug_str      0x00000000     0x1629
+.debug_str      0x00000000     0x1111
  *(.debug_str)
- .debug_str     0x00000000      0x9d9 ./system/src/stm32f4-hal/stm32f4xx_hal.o
-                                0xa22 (size before relaxing)
- .debug_str     0x000009d9      0x4bd ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
+ .debug_str     0x00000000      0xa57 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
                                 0xace (size before relaxing)
- .debug_str     0x00000e96       0x49 ./system/src/newlib/exit.o
+ .debug_str     0x00000a57       0x49 ./system/src/newlib/exit.o
                                 0x1f3 (size before relaxing)
- .debug_str     0x00000edf      0x1a8 ./system/src/newlib/startup.o
+ .debug_str     0x00000aa0      0x1a8 ./system/src/newlib/startup.o
                                 0x36e (size before relaxing)
- .debug_str     0x00001087       0x5b ./system/src/newlib/syscalls.o
+ .debug_str     0x00000c48       0x5b ./system/src/newlib/syscalls.o
                                 0x228 (size before relaxing)
- .debug_str     0x000010e2      0x11f ./system/src/cortexm/exception-handlers.o
+ .debug_str     0x00000ca3      0x11f ./system/src/cortexm/exception-handlers.o
                                 0x2d2 (size before relaxing)
- .debug_str     0x00001201       0x5d ./system/src/cortexm/initialize-hardware.o
+ .debug_str     0x00000dc2       0x5d ./system/src/cortexm/initialize-hardware.o
                                 0x2a3 (size before relaxing)
- .debug_str     0x0000125e       0x27 ./system/src/cortexm/reset-hardware.o
+ .debug_str     0x00000e1f       0x27 ./system/src/cortexm/reset-hardware.o
                                 0x265 (size before relaxing)
- .debug_str     0x00001285       0x5e ./system/src/cmsis/system_stm32f4xx.o
+ .debug_str     0x00000e46      0x145 ./system/src/cmsis/system_stm32f4xx.o
                                 0x3a7 (size before relaxing)
- .debug_str     0x000012e3       0x59 ./system/src/cmsis/vectors_stm32f401xe.o
+ .debug_str     0x00000f8b       0x59 ./system/src/cmsis/vectors_stm32f401xe.o
                                 0x1f2 (size before relaxing)
- .debug_str     0x0000133c       0x96 ./src/main.o
-                                0x25a (size before relaxing)
- .debug_str     0x000013d2       0x70 ./WatchDog/WDGDRV.o
-                                0x235 (size before relaxing)
- .debug_str     0x00001442       0x93 ./WatchDog/WDGM.o
-                                0x27b (size before relaxing)
- .debug_str     0x000014d5       0x42 ./Rcc/Rcc.o
+ .debug_str     0x00000fe4       0x5e ./src/main.o
+                                0x214 (size before relaxing)
+ .debug_str     0x00001042       0x4e ./WatchDog/WDGDRV.o
+                                0x5bd (size before relaxing)
+ .debug_str     0x00001090       0x42 ./Rcc/Rcc.o
                                 0x211 (size before relaxing)
- .debug_str     0x00001517       0x3f ./Nvic/Nvic.o
+ .debug_str     0x000010d2       0x3f ./Nvic/Nvic.o
                                 0x20c (size before relaxing)
- .debug_str     0x00001556       0x2d ./Led/LEDM.o
-                                0x226 (size before relaxing)
- .debug_str     0x00001583       0xa6 ./Gpio/GPIO.o
-                                0x268 (size before relaxing)
 
-.debug_loc      0x00000000     0x12d2
+.debug_loc      0x00000000      0xf1d
  *(.debug_loc)
- .debug_loc     0x00000000      0x1d9 ./system/src/stm32f4-hal/stm32f4xx_hal.o
- .debug_loc     0x000001d9      0x5c5 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
- .debug_loc     0x0000079e       0x65 ./system/src/newlib/exit.o
- .debug_loc     0x00000803      0x48e ./system/src/newlib/startup.o
- .debug_loc     0x00000c91       0xaf ./system/src/newlib/syscalls.o
- .debug_loc     0x00000d40       0x7e ./system/src/cortexm/exception-handlers.o
- .debug_loc     0x00000dbe       0x20 ./system/src/cortexm/initialize-hardware.o
- .debug_loc     0x00000dde      0x118 ./system/src/cmsis/system_stm32f4xx.o
- .debug_loc     0x00000ef6       0x8c ./src/main.o
- .debug_loc     0x00000f82       0x20 ./WatchDog/WDGDRV.o
- .debug_loc     0x00000fa2       0x55 ./WatchDog/WDGM.o
- .debug_loc     0x00000ff7       0xca ./Rcc/Rcc.o
- .debug_loc     0x000010c1       0xf6 ./Nvic/Nvic.o
- .debug_loc     0x000011b7       0x9b ./Led/LEDM.o
- .debug_loc     0x00001252       0x80 ./Gpio/GPIO.o
+ .debug_loc     0x00000000      0x5c5 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
+ .debug_loc     0x000005c5       0x65 ./system/src/newlib/exit.o
+ .debug_loc     0x0000062a      0x48e ./system/src/newlib/startup.o
+ .debug_loc     0x00000ab8       0xaf ./system/src/newlib/syscalls.o
+ .debug_loc     0x00000b67       0x7e ./system/src/cortexm/exception-handlers.o
+ .debug_loc     0x00000be5       0x20 ./system/src/cortexm/initialize-hardware.o
+ .debug_loc     0x00000c05      0x118 ./system/src/cmsis/system_stm32f4xx.o
+ .debug_loc     0x00000d1d       0x20 ./src/main.o
+ .debug_loc     0x00000d3d       0x20 ./WatchDog/WDGDRV.o
+ .debug_loc     0x00000d5d       0xca ./Rcc/Rcc.o
+ .debug_loc     0x00000e27       0xf6 ./Nvic/Nvic.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1217,21 +1201,17 @@ END GROUP
 OUTPUT(Final_project.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_ranges   0x00000000      0x510
- .debug_ranges  0x00000000       0xd8 ./system/src/stm32f4-hal/stm32f4xx_hal.o
- .debug_ranges  0x000000d8      0x150 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
- .debug_ranges  0x00000228       0x18 ./system/src/newlib/exit.o
- .debug_ranges  0x00000240       0xd0 ./system/src/newlib/startup.o
- .debug_ranges  0x00000310       0x20 ./system/src/newlib/syscalls.o
- .debug_ranges  0x00000330       0x70 ./system/src/cortexm/exception-handlers.o
- .debug_ranges  0x000003a0       0x18 ./system/src/cortexm/initialize-hardware.o
- .debug_ranges  0x000003b8       0x10 ./system/src/cortexm/reset-hardware.o
- .debug_ranges  0x000003c8       0x18 ./system/src/cmsis/system_stm32f4xx.o
- .debug_ranges  0x000003e0       0x10 ./system/src/cmsis/vectors_stm32f401xe.o
- .debug_ranges  0x000003f0       0x50 ./src/main.o
- .debug_ranges  0x00000440       0x20 ./WatchDog/WDGDRV.o
- .debug_ranges  0x00000460       0x28 ./WatchDog/WDGM.o
- .debug_ranges  0x00000488       0x20 ./Rcc/Rcc.o
- .debug_ranges  0x000004a8       0x18 ./Nvic/Nvic.o
- .debug_ranges  0x000004c0       0x38 ./Led/LEDM.o
- .debug_ranges  0x000004f8       0x18 ./Gpio/GPIO.o
+.debug_ranges   0x00000000      0x378
+ .debug_ranges  0x00000000      0x150 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
+ .debug_ranges  0x00000150       0x18 ./system/src/newlib/exit.o
+ .debug_ranges  0x00000168       0xd0 ./system/src/newlib/startup.o
+ .debug_ranges  0x00000238       0x20 ./system/src/newlib/syscalls.o
+ .debug_ranges  0x00000258       0x70 ./system/src/cortexm/exception-handlers.o
+ .debug_ranges  0x000002c8       0x18 ./system/src/cortexm/initialize-hardware.o
+ .debug_ranges  0x000002e0       0x10 ./system/src/cortexm/reset-hardware.o
+ .debug_ranges  0x000002f0       0x18 ./system/src/cmsis/system_stm32f4xx.o
+ .debug_ranges  0x00000308       0x10 ./system/src/cmsis/vectors_stm32f401xe.o
+ .debug_ranges  0x00000318       0x10 ./src/main.o
+ .debug_ranges  0x00000328       0x18 ./WatchDog/WDGDRV.o
+ .debug_ranges  0x00000340       0x20 ./Rcc/Rcc.o
+ .debug_ranges  0x00000360       0x18 ./Nvic/Nvic.o

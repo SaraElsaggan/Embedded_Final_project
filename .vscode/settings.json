@@ -4,7 +4,10 @@
     "stm32f4xx.h": "c",
     "cstdint": "c",
     "stdint.h": "c",
-    "wdgdrv.h": "c"
+    "wdgdrv.h": "c",
+    "stm32f401xe.h": "c",
+    "nvic.h": "c",
+    "std_types.h": "c"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",

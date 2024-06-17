@@ -15,24 +15,45 @@
 
 
 
-extern last_execution_time;
-
+// extern last_execution_time;
+uint32 x=0;
+uint32 cr=0;
+uint32 cfr=0;
+uint32 sr=0;
+uint32_t cfr_value;
 
 
 void WDGDrv_Init(void)
 {
-        WDG->CR |= (1 << 7); // set bit 7 to enable Watchdog
-        WDG->CR |= (1 << 6); //set bit 6 to avoid generating an immediate reset.
 
-        WDG->CR &= ~(0x3F);  // clear the t[5:0] bits 0011 1111
-        WDG->CR |= (((16 *1000 * 50) / (4096 * 8) - 1 ) & 0x3F  ) ;//   
+        // Rcc_Enable(RCC_WWDG);
+
+        // WDG->CR |= (1 << 6); //set bit 6 to avoid generating an immediate reset.
+        // // WDG->CR &= ~(0x3F);  // clear the t[5:0] bits 0011 1111
+        // // WDG->CR |= (((16 *1000 * 50) / (4096 * 8) - 1 ) & 0x3F  ) ;//   
+        // // WDG->CR |= 0x3F  ;//   
+        // WDG->CR = 0xFF  ;//   
+
+        WDG->CR = (1 << 6) | 0x3F;
 
 
         WDG->CFR |= 0x7F; // set bits 0 to 6 to maxmizw the window value to disable window mode
-        WDG->CFR |= (1 << 7) | (1 << 8);//  WDGTB = 3
-        WDG->CFR &= ~(1 << 9);  // enable EWI
+        // WDG->CFR |= (1 << 7) ;//  WDGTB = 3
+        // WDG->CFR |=(1 << 8);  // enable EWI
+        WDG->CFR |=(1 << 9);  // enable EWI
 
+        // WDG->SR &= ~(1<<0);
         Nvic_EnableInterrupt(0);
+        HAL_NVIC_SetPriority(WWDG_IRQn, 0, 0); // Priority level 0 is the highest
+    //     HAL_NVIC_EnableIRQ(WWDG_IRQn);
+
+        WDG->CR |= (1 << 7); // set bit 7 to e	nable Watchdog
+        // NVIC->ISER[WWDG_IRQn >> 5] = (1 << (WWDG_IRQn & 0x1F));
+         cfr_value = WDG->CFR;
+
+        
+
+        
 }
 /*
 
@@ -94,7 +115,6 @@ void WDGDrv_Init(void)
 //     WDG->CFR |= (1 << 7) | (1 << 8);
 //     WDG->CFR |= (1 << 9);
 
-//     // WDG->SR &= ~(1<<0);
 
 //     // WDG->CR |= (1<<7); // set bit 7 to activate the WDG  should be last step
 
@@ -148,18 +168,36 @@ void WDGDrv_Init(void)
 
 
 
+
+// void z(void){
+//     cr=WDG->CR;
+//     cfr=WDG->CFR;
+//     sr=WDG->SR;
+// }
+
+
+
+
 void WWDG_IRQHandler(void){
-    
+        if (WDG->SR & 0x01) {
+        WDG->CR = 0xFF  ;//   
         
+        x=1;
+        // implemnt the LED toggle here 
+        // WDG->CR |= 0x7F ;//   
+        // WDG->CR &= ~(0x3F);  // clear the t[5:0] bits 0011 1111
+        // WDG->CR |= (((16 *1000 * 50) / (4096 * 8) - 1 )  & 0x3f) ;// refill the ocunter
+
         GPIOB_MODER &= ~(0x03 << 6 * 2); // clear bin 6
         GPIOB_MODER |= 1 << (6 * 2);     // set this pin to be in output mode
         GPIOB_OTYPER &= ~(1 << 6);       // output type to be push-pull
         GPIOB_ODR |= (1 << 6);           // set pin high
+        // WDG->SR = 0;
+        }
 
-        WDG->CR |= (((16 *1000 * 50) / (4096 * 8) - 1 )  & 0x3f) ;// refill the ocunter
-        WDG->SR &= ~(1<<0);
+        // WDG->SR &= ~(1<<0);
 
-
+        // WWDG_EWI_ENABLE 
 
 
 
@@ -202,13 +240,13 @@ void WWDG_IRQHandler(void){
 
 
 
-void watchdog_refresh()
-{
-    uint32 PCLK1 = HAL_RCC_GetPCLK1Freq();
-    WDG->CR &= ~(0x3F);  // clear the t[5:0] bits 0011 1111
-    // WDG->CR |= (((PCLK1*1000 * 50) / (4096 * 8) - 1 ) & 0x3F );  
-    WDG->CR |= 0x7f;  // this is just to debug why the reset keep happening
-    }
+// void watchdog_refresh()
+// {
+//     uint32 PCLK1 = HAL_RCC_GetPCLK1Freq();
+//     WDG->CR &= ~(0x3F);  // clear the t[5:0] bits 0011 1111
+//     // WDG->CR |= (((PCLK1*1000 * 50) / (4096 * 8) - 1 ) & 0x3F );  
+//     WDG->CR |= 0x7f;  // this is just to debug why the reset keep happening
+//     }
 
 
 // void WDGDrv_Init(void) {

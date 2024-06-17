@@ -27,14 +27,14 @@ static void delay(uint32 time){
 int main(void){
 
 
+    // HAL_Init();
     Rcc_Init();
-    HAL_Init();
 	Rcc_Enable(RCC_GPIOB);
 	Rcc_Enable(RCC_WWDG);
 
 //    initialization.
-    LEDM_Init();
-    WDGM_Init();
+    // LEDM_Init();
+    // WDGM_Init();     
     WDGDrv_Init();
 
     uint32 counter;
@@ -44,17 +44,21 @@ int main(void){
         // counter = WDG->CR & 0x7F;
         //printf("WWDG Counter Value: %lu\n", counter);
 
-    	delay(10);
+    	// delay(50);
+        // z();
+        // WWDG_IRQHandler();
 
         // WDG->CR |= 0x3f;  // this is just to debug why the reset keep happening
     	// HAL_Delay(10);  
-        LEDM_Manage();
+        // LEDM_Manage();
 
         // Call WDGM_MainFunction every 20ms
-        delay(20);
-        // HAL_Delay(20);
-        WDGM_MainFunction();
+        // delay(20);
+        // // HAL_Delay(20);
+        // WDGM_MainFunction();
 
     }
     return 0;
 }
+
+
