@@ -1,64 +1,31 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "stm32f4xx_hal.h"
-#include "RCC.h"
-#include "GPIO.h"
-#include "WDGDRV.h"
-#include "WDGM.h"
-#include "LEDM.h"
-#include <stdint.h>
+#include <avr/io.h>
+#include <avr/interrupt.h>
 
-
-static void delay(uint32 time){
-
-    volatile uint32 i;
-    time *= 1000;
-    // watchdog_refresh();
-    for ( i = 0 ; i<time;i++){
-    // refresh();
-    // WDG->CR |= 0xFF;
-
-
-
-    }
-    // watchdog_refresh();
+int x = 0;
+ISR(WDT_vect) {
+    x = 1;
+    PORTB |= (1 << PB0); // Set PB0 high
+    WDTCSR = (1 << WDIE);
 }
 
-int main(void){
+void WDGDrv_Init(void) {
+    // Disable global interrupts
+    cli();
+    //Interrupt and System Reset Mode
+    WDTCSR = (1 << WDCE) | (1 << WDE);// Set the Watchdog change enable bit and Watchdog system reset enable bit in one operation
+    WDTCSR =  (1 << WDE)|(1 << WDIE) | (1 << WDP1);    // Set the prescaler to 64 seconds and enable the Watchdog interrupt
+    sei(); // Enable global interrupts
+}
 
-
-    // HAL_Init();
-    Rcc_Init();
-	Rcc_Enable(RCC_GPIOB);
-	Rcc_Enable(RCC_WWDG);
-
-//    initialization.
-    // LEDM_Init();
-    // WDGM_Init();     
+int main(void) {
+    // Set PB0 as output for the LED
+    DDRB |= (1 << PB0);
+    PORTB &= ~(1 << PB0);  // Ensure the LED is initially off
     WDGDrv_Init();
 
-    uint32 counter;
-
+    // Main loop
     while (1) {
-        // Call LEDM_Manage every 10ms
-        // counter = WDG->CR & 0x7F;
-        //printf("WWDG Counter Value: %lu\n", counter);
-
-    	// delay(50);
-        // z();
-        // WWDG_IRQHandler();
-
-        // WDG->CR |= 0x3f;  // this is just to debug why the reset keep happening
-    	// HAL_Delay(10);  
-        // LEDM_Manage();
-
-        // Call WDGM_MainFunction every 20ms
-        // delay(20);
-        // // HAL_Delay(20);
-        // WDGM_MainFunction();
-
     }
+
     return 0;
 }
-
-
