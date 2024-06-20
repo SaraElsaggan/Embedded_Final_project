@@ -1,0 +1,731 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                              c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o (exit)
+c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                              ./Nvic/Nvic.o (__do_copy_data)
+c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                              ./WatchDog/WDGDRV.o (__do_clear_bss)
+c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+                              ./src/main.o (__muluhisi3)
+c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+                              c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o) (__umulhisi3)
+
+Allocating common symbols
+Common symbol       size              file
+
+last_execution_time
+                    0x4               ./WatchDog/WDGM.o
+
+Discarded input sections
+
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGDRV.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGDRV.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGDRV.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGDRV.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGDRV.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGDRV.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGDRV.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGDRV.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGDRV.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGDRV.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGDRV.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGDRV.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGDRV.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGDRV.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGDRV.o
+ .debug_macro   0x0000000000000000      0xb26 ./WatchDog/WDGDRV.o
+ .debug_macro   0x0000000000000000       0x5e ./WatchDog/WDGDRV.o
+ .group         0x0000000000000000        0x8 ./WatchDog/WDGM.o
+ .debug_macro   0x0000000000000000      0xb26 ./WatchDog/WDGM.o
+ .group         0x0000000000000000        0x8 ./Rcc/Rcc.o
+ .group         0x0000000000000000        0x8 ./Rcc/Rcc.o
+ .group         0x0000000000000000        0x8 ./Rcc/Rcc.o
+ .group         0x0000000000000000        0x8 ./Rcc/Rcc.o
+ .debug_macro   0x0000000000000000      0xb26 ./Rcc/Rcc.o
+ .group         0x0000000000000000        0x8 ./Nvic/Nvic.o
+ .group         0x0000000000000000        0x8 ./Nvic/Nvic.o
+ .debug_macro   0x0000000000000000      0xb26 ./Nvic/Nvic.o
+ .debug_macro   0x0000000000000000       0x22 ./Nvic/Nvic.o
+ .group         0x0000000000000000        0x8 ./Led/LEDM.o
+ .group         0x0000000000000000        0x8 ./Led/LEDM.o
+ .group         0x0000000000000000        0x8 ./Led/LEDM.o
+ .debug_macro   0x0000000000000000      0xb26 ./Led/LEDM.o
+ .group         0x0000000000000000        0x8 ./Gpio/GPIO.o
+ .group         0x0000000000000000        0x8 ./Gpio/GPIO.o
+ .group         0x0000000000000000        0x8 ./Gpio/GPIO.o
+ .group         0x0000000000000000        0x8 ./Gpio/GPIO.o
+ .debug_macro   0x0000000000000000      0xb26 ./Gpio/GPIO.o
+ .debug_macro   0x0000000000000000       0x16 ./Gpio/GPIO.o
+ .debug_macro   0x0000000000000000       0xe2 ./Gpio/GPIO.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000008000 xr
+data             0x0000000000800100 0x0000000000000800 rw !x
+eeprom           0x0000000000810000 0x0000000000000400 rw !x
+fuse             0x0000000000820000 0x0000000000000003 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+LOAD ./src/main.o
+LOAD ./WatchDog/WDGDRV.o
+LOAD ./WatchDog/WDGM.o
+LOAD ./Rcc/Rcc.o
+LOAD ./Nvic/Nvic.o
+LOAD ./Led/LEDM.o
+LOAD ./Gpio/GPIO.o
+START GROUP
+LOAD c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a
+LOAD c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a
+LOAD c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a
+LOAD c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libatmega328p.a
+END GROUP
+                0x0000000000000000                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x0000000000800100]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                [0x0000000000008000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                [0x0000000000000800]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x0000000000000400]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x0000000000000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000      0xa14
+ *(.vectors)
+ .vectors       0x0000000000000000       0x68 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x0000000000000000                __vector_default
+                0x0000000000000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x0000000000000068                . = ALIGN (0x2)
+                0x0000000000000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000000000000068        0x0 linker stubs
+ *(.trampolines*)
+                0x0000000000000068                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x0000000000000068                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000000000000068                __ctors_start = .
+ *(.ctors)
+                0x0000000000000068                __ctors_end = .
+                0x0000000000000068                __dtors_start = .
+ *(.dtors)
+                0x0000000000000068                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000000000000068        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x0000000000000068                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000000000000068        0xc c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000074       0x16 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000074                __do_copy_data
+ .init4         0x000000000000008a       0x10 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x000000000000008a                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000000000009a        0x8 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x00000000000000a2        0x4 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x00000000000000a2                __vector_22
+                0x00000000000000a2                __vector_1
+                0x00000000000000a2                __vector_24
+                0x00000000000000a2                __vector_12
+                0x00000000000000a2                __bad_interrupt
+                0x00000000000000a2                __vector_3
+                0x00000000000000a2                __vector_23
+                0x00000000000000a2                __vector_25
+                0x00000000000000a2                __vector_11
+                0x00000000000000a2                __vector_13
+                0x00000000000000a2                __vector_17
+                0x00000000000000a2                __vector_19
+                0x00000000000000a2                __vector_7
+                0x00000000000000a2                __vector_5
+                0x00000000000000a2                __vector_4
+                0x00000000000000a2                __vector_9
+                0x00000000000000a2                __vector_2
+                0x00000000000000a2                __vector_21
+                0x00000000000000a2                __vector_15
+                0x00000000000000a2                __vector_8
+                0x00000000000000a2                __vector_14
+                0x00000000000000a2                __vector_10
+                0x00000000000000a2                __vector_16
+                0x00000000000000a2                __vector_18
+                0x00000000000000a2                __vector_20
+ .text          0x00000000000000a6        0x0 ./src/main.o
+ .text          0x00000000000000a6        0x0 ./WatchDog/WDGDRV.o
+ .text          0x00000000000000a6        0x0 ./WatchDog/WDGM.o
+ .text          0x00000000000000a6        0x0 ./Rcc/Rcc.o
+ .text          0x00000000000000a6        0x0 ./Nvic/Nvic.o
+ .text          0x00000000000000a6        0x0 ./Led/LEDM.o
+ .text          0x00000000000000a6        0x0 ./Gpio/GPIO.o
+ .text          0x00000000000000a6        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000000000000a6        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000000000a6        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000000000a6        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text          0x00000000000000a6        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+                0x00000000000000a6                . = ALIGN (0x2)
+ *(.text.*)
+ .text.delay    0x00000000000000a6       0x88 ./src/main.o
+ .text.main     0x000000000000012e       0x32 ./src/main.o
+                0x000000000000012e                main
+ .text.__vector_6
+                0x0000000000000160       0x54 ./WatchDog/WDGDRV.o
+                0x0000000000000160                __vector_6
+ .text.WDGDrv_Init
+                0x00000000000001b4       0x78 ./WatchDog/WDGDRV.o
+                0x00000000000001b4                WDGDrv_Init
+ .text.WDGDrv_IsrNotification
+                0x000000000000022c       0x12 ./WatchDog/WDGDRV.o
+                0x000000000000022c                WDGDrv_IsrNotification
+ .text.WDGM_Init
+                0x000000000000023e       0x36 ./WatchDog/WDGM.o
+                0x000000000000023e                WDGM_Init
+ .text.WDGM_MainFunction
+                0x0000000000000274       0xe6 ./WatchDog/WDGM.o
+                0x0000000000000274                WDGM_MainFunction
+ .text.WDGM_PovideSuppervisionStatus
+                0x000000000000035a       0x12 ./WatchDog/WDGM.o
+                0x000000000000035a                WDGM_PovideSuppervisionStatus
+ .text.WDGM_AlivenessIndication
+                0x000000000000036c       0x36 ./WatchDog/WDGM.o
+                0x000000000000036c                WDGM_AlivenessIndication
+ .text.Rcc_Init
+                0x00000000000003a2       0x2e ./Rcc/Rcc.o
+                0x00000000000003a2                Rcc_Init
+ .text.Rcc_Enable
+                0x00000000000003d0      0x15c ./Rcc/Rcc.o
+                0x00000000000003d0                Rcc_Enable
+ .text.Rcc_Disable
+                0x000000000000052c      0x15c ./Rcc/Rcc.o
+                0x000000000000052c                Rcc_Disable
+ .text.Nvic_EnableInterrupt
+                0x0000000000000688       0x92 ./Nvic/Nvic.o
+                0x0000000000000688                Nvic_EnableInterrupt
+ .text.Nvic_DisableInterrupt
+                0x000000000000071a       0x92 ./Nvic/Nvic.o
+                0x000000000000071a                Nvic_DisableInterrupt
+ .text.delay    0x00000000000007ac       0x88 ./Led/LEDM.o
+ .text.LEDM_Init
+                0x0000000000000834       0x18 ./Led/LEDM.o
+                0x0000000000000834                LEDM_Init
+ .text.LEDM_Manage
+                0x000000000000084c       0x36 ./Led/LEDM.o
+                0x000000000000084c                LEDM_Manage
+ .text.GPIO_Init
+                0x0000000000000882       0xa0 ./Gpio/GPIO.o
+                0x0000000000000882                GPIO_Init
+ .text.GPIO_Write
+                0x0000000000000922       0xba ./Gpio/GPIO.o
+                0x0000000000000922                GPIO_Write
+ .text.libgcc.mul
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000000009dc        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000000009dc       0x16 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+                0x00000000000009dc                __muluhisi3
+ .text.libgcc.div
+                0x00000000000009f2        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x00000000000009f2        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x00000000000009f2        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x00000000000009f2        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x00000000000009f2        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x00000000000009f2        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.mul
+                0x00000000000009f2       0x1e c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+                0x00000000000009f2                __umulhisi3
+ .text.libgcc.div
+                0x0000000000000a10        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x0000000000000a10        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000a10        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000a10        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000a10        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000a10        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+                0x0000000000000a10                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000000a10        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x0000000000000a10                _exit
+                0x0000000000000a10                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000000a10        0x4 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000000a14                _etext = .
+
+.data           0x0000000000800100       0x14 load address 0x0000000000000a14
+                0x0000000000800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800100        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .data          0x0000000000800100        0x0 ./src/main.o
+ .data          0x0000000000800100        0x0 ./WatchDog/WDGDRV.o
+ .data          0x0000000000800100        0x0 ./WatchDog/WDGM.o
+ .data          0x0000000000800100        0x0 ./Rcc/Rcc.o
+ .data          0x0000000000800100        0x0 ./Nvic/Nvic.o
+ .data          0x0000000000800100        0x0 ./Led/LEDM.o
+ .data          0x0000000000800100        0x0 ./Gpio/GPIO.o
+ .data          0x0000000000800100        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .data          0x0000000000800100        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x0000000000800100        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x0000000000800100        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .data          0x0000000000800100        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ *(.data*)
+ .data.NVIC_ISER
+                0x0000000000800100        0x6 ./Nvic/Nvic.o
+                0x0000000000800100                NVIC_ISER
+ .data.NVIC_ICER
+                0x0000000000800106        0x6 ./Nvic/Nvic.o
+                0x0000000000800106                NVIC_ICER
+ .data.GPIO_Addresses
+                0x000000000080010c        0x8 ./Gpio/GPIO.o
+                0x000000000080010c                GPIO_Addresses
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.r*)
+                0x0000000000800114                . = ALIGN (0x2)
+                0x0000000000800114                _edata = .
+                0x0000000000800114                PROVIDE (__data_end, .)
+
+.bss            0x0000000000800114       0x14
+                0x0000000000800114                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0000000000800114        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .bss           0x0000000000800114        0x0 ./src/main.o
+ .bss           0x0000000000800114        0x0 ./WatchDog/WDGDRV.o
+ .bss           0x0000000000800114        0x0 ./WatchDog/WDGM.o
+ .bss           0x0000000000800114        0x0 ./Rcc/Rcc.o
+ .bss           0x0000000000800114        0x0 ./Nvic/Nvic.o
+ .bss           0x0000000000800114        0x0 ./Led/LEDM.o
+ .bss           0x0000000000800114        0x0 ./Gpio/GPIO.o
+ .bss           0x0000000000800114        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .bss           0x0000000000800114        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0000000000800114        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x0000000000800114        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .bss           0x0000000000800114        0x0 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ *(.bss*)
+ .bss.x         0x0000000000800114        0x2 ./WatchDog/WDGDRV.o
+                0x0000000000800114                x
+ .bss.status    0x0000000000800116        0x1 ./WatchDog/WDGM.o
+ .bss.led_no_calls
+                0x0000000000800117        0x4 ./WatchDog/WDGM.o
+ .bss.start_time
+                0x000000000080011b        0x4 ./WatchDog/WDGM.o
+ .bss.current_time
+                0x000000000080011f        0x4 ./WatchDog/WDGM.o
+ .bss.led_state
+                0x0000000000800123        0x1 ./Led/LEDM.o
+ *(COMMON)
+ COMMON         0x0000000000800124        0x4 ./WatchDog/WDGM.o
+                0x0000000000800124                last_execution_time
+                0x0000000000800128                PROVIDE (__bss_end, .)
+                0x0000000000000a14                __data_load_start = LOADADDR (.data)
+                0x0000000000000a28                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0000000000800128        0x0
+                [!provide]                        PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                        PROVIDE (__noinit_end, .)
+                0x0000000000800128                _end = .
+                [!provide]                        PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x30
+ *(.comment)
+ .comment       0x0000000000000000       0x30 ./src/main.o
+                                         0x31 (size before relaxing)
+ .comment       0x0000000000000030       0x31 ./WatchDog/WDGDRV.o
+ .comment       0x0000000000000030       0x31 ./WatchDog/WDGM.o
+ .comment       0x0000000000000030       0x31 ./Rcc/Rcc.o
+ .comment       0x0000000000000030       0x31 ./Nvic/Nvic.o
+ .comment       0x0000000000000030       0x31 ./Led/LEDM.o
+ .comment       0x0000000000000030       0x31 ./Gpio/GPIO.o
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x140
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 ./src/main.o
+ .debug_aranges
+                0x0000000000000028       0x30 ./WatchDog/WDGDRV.o
+ .debug_aranges
+                0x0000000000000058       0x38 ./WatchDog/WDGM.o
+ .debug_aranges
+                0x0000000000000090       0x30 ./Rcc/Rcc.o
+ .debug_aranges
+                0x00000000000000c0       0x28 ./Nvic/Nvic.o
+ .debug_aranges
+                0x00000000000000e8       0x30 ./Led/LEDM.o
+ .debug_aranges
+                0x0000000000000118       0x28 ./Gpio/GPIO.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000      0xeb5
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x5f4 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_info    0x00000000000005f4       0xe0 ./src/main.o
+ .debug_info    0x00000000000006d4      0x139 ./WatchDog/WDGDRV.o
+ .debug_info    0x000000000000080d      0x155 ./WatchDog/WDGM.o
+ .debug_info    0x0000000000000962      0x135 ./Rcc/Rcc.o
+ .debug_info    0x0000000000000a97      0x16a ./Nvic/Nvic.o
+ .debug_info    0x0000000000000c01       0xfc ./Led/LEDM.o
+ .debug_info    0x0000000000000cfd      0x1b8 ./Gpio/GPIO.o
+
+.debug_abbrev   0x0000000000000000      0xa63
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x5a2 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_abbrev  0x00000000000005a2       0x91 ./src/main.o
+ .debug_abbrev  0x0000000000000633       0xea ./WatchDog/WDGDRV.o
+ .debug_abbrev  0x000000000000071d       0x9d ./WatchDog/WDGM.o
+ .debug_abbrev  0x00000000000007ba       0x81 ./Rcc/Rcc.o
+ .debug_abbrev  0x000000000000083b       0xcc ./Nvic/Nvic.o
+ .debug_abbrev  0x0000000000000907       0x93 ./Led/LEDM.o
+ .debug_abbrev  0x000000000000099a       0xc9 ./Gpio/GPIO.o
+
+.debug_line     0x0000000000000000      0xb5e
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0x1a c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_line    0x000000000000001a      0x139 ./src/main.o
+ .debug_line    0x0000000000000153      0x318 ./WatchDog/WDGDRV.o
+ .debug_line    0x000000000000046b      0x13b ./WatchDog/WDGM.o
+ .debug_line    0x00000000000005a6      0x1a8 ./Rcc/Rcc.o
+ .debug_line    0x000000000000074e       0xfb ./Nvic/Nvic.o
+ .debug_line    0x0000000000000849      0x1c4 ./Led/LEDM.o
+ .debug_line    0x0000000000000a0d      0x151 ./Gpio/GPIO.o
+
+.debug_frame    0x0000000000000000      0x320
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x54 ./src/main.o
+ .debug_frame   0x0000000000000054       0x94 ./WatchDog/WDGDRV.o
+ .debug_frame   0x00000000000000e8       0xa8 ./WatchDog/WDGM.o
+ .debug_frame   0x0000000000000190       0x74 ./Rcc/Rcc.o
+ .debug_frame   0x0000000000000204       0x54 ./Nvic/Nvic.o
+ .debug_frame   0x0000000000000258       0x74 ./Led/LEDM.o
+ .debug_frame   0x00000000000002cc       0x54 ./Gpio/GPIO.o
+
+.debug_str      0x0000000000000000     0x8526
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x208 c:/users/sara/my_tools/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_str     0x0000000000000208     0x2fa8 ./src/main.o
+                                       0x300d (size before relaxing)
+ .debug_str     0x00000000000031b0     0x43ed ./WatchDog/WDGDRV.o
+                                       0x741a (size before relaxing)
+ .debug_str     0x000000000000759d       0xb6 ./WatchDog/WDGM.o
+                                       0x2fc5 (size before relaxing)
+ .debug_str     0x0000000000007653      0xc23 ./Rcc/Rcc.o
+                                       0x3b30 (size before relaxing)
+ .debug_str     0x0000000000008276      0x120 ./Nvic/Nvic.o
+                                       0x30e0 (size before relaxing)
+ .debug_str     0x0000000000008396       0x59 ./Led/LEDM.o
+                                       0x305b (size before relaxing)
+ .debug_str     0x00000000000083ef      0x137 ./Gpio/GPIO.o
+                                       0x37ac (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x556
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x82 ./src/main.o
+ .debug_loc     0x0000000000000082      0x10c ./WatchDog/WDGDRV.o
+ .debug_loc     0x000000000000018e      0x120 ./WatchDog/WDGM.o
+ .debug_loc     0x00000000000002ae       0xcb ./Rcc/Rcc.o
+ .debug_loc     0x0000000000000379       0x90 ./Nvic/Nvic.o
+ .debug_loc     0x0000000000000409       0xbd ./Led/LEDM.o
+ .debug_loc     0x00000000000004c6       0x90 ./Gpio/GPIO.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000       0xd0
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x18 ./src/main.o
+ .debug_ranges  0x0000000000000018       0x20 ./WatchDog/WDGDRV.o
+ .debug_ranges  0x0000000000000038       0x28 ./WatchDog/WDGM.o
+ .debug_ranges  0x0000000000000060       0x20 ./Rcc/Rcc.o
+ .debug_ranges  0x0000000000000080       0x18 ./Nvic/Nvic.o
+ .debug_ranges  0x0000000000000098       0x20 ./Led/LEDM.o
+ .debug_ranges  0x00000000000000b8       0x18 ./Gpio/GPIO.o
+
+.debug_macro    0x0000000000000000     0x2e65
+ *(.debug_macro)
+ .debug_macro   0x0000000000000000       0x24 ./src/main.o
+ .debug_macro   0x0000000000000024      0xb26 ./src/main.o
+ .debug_macro   0x0000000000000b4a       0x5e ./src/main.o
+ .debug_macro   0x0000000000000ba8       0xd3 ./WatchDog/WDGDRV.o
+ .debug_macro   0x0000000000000c7b       0x10 ./WatchDog/WDGDRV.o
+ .debug_macro   0x0000000000000c8b      0x1c9 ./WatchDog/WDGDRV.o
+ .debug_macro   0x0000000000000e54      0x2fc ./WatchDog/WDGDRV.o
+ .debug_macro   0x0000000000001150      0x166 ./WatchDog/WDGDRV.o
+ .debug_macro   0x00000000000012b6       0xaa ./WatchDog/WDGDRV.o
+ .debug_macro   0x0000000000001360     0x1411 ./WatchDog/WDGDRV.o
+ .debug_macro   0x0000000000002771      0x13a ./WatchDog/WDGDRV.o
+ .debug_macro   0x00000000000028ab       0xb7 ./WatchDog/WDGDRV.o
+ .debug_macro   0x0000000000002962       0x34 ./WatchDog/WDGDRV.o
+ .debug_macro   0x0000000000002996       0x18 ./WatchDog/WDGDRV.o
+ .debug_macro   0x00000000000029ae       0x6c ./WatchDog/WDGDRV.o
+ .debug_macro   0x0000000000002a1a       0x62 ./WatchDog/WDGDRV.o
+ .debug_macro   0x0000000000002a7c       0x69 ./WatchDog/WDGDRV.o
+ .debug_macro   0x0000000000002ae5       0x25 ./WatchDog/WDGM.o
+ .debug_macro   0x0000000000002b0a       0x56 ./Rcc/Rcc.o
+ .debug_macro   0x0000000000002b60       0xe2 ./Rcc/Rcc.o
+ .debug_macro   0x0000000000002c42       0x22 ./Rcc/Rcc.o
+ .debug_macro   0x0000000000002c64       0x94 ./Rcc/Rcc.o
+ .debug_macro   0x0000000000002cf8       0x46 ./Nvic/Nvic.o
+ .debug_macro   0x0000000000002d3e       0x41 ./Led/LEDM.o
+ .debug_macro   0x0000000000002d7f       0x16 ./Led/LEDM.o
+ .debug_macro   0x0000000000002d95       0x5e ./Led/LEDM.o
+ .debug_macro   0x0000000000002df3       0x56 ./Gpio/GPIO.o
+ .debug_macro   0x0000000000002e49       0x1c ./Gpio/GPIO.o
+OUTPUT(Embedded_Final_Project.elf elf32-avr)
+LOAD linker stubs

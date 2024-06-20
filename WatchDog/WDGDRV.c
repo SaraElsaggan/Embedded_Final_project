@@ -1,48 +1,48 @@
+// #include "stm32l0xx.h" 
 #include "WDGDRV.h"
 #include "WDGM.h"
-#include "WDGM.h"
-#include "Rcc.h"
-#include <stdint.h>
-#include "stm32f4xx_hal.h"
-#include "Nvic.h"
 #include "Std_Types.h"
-
-
-#include "Std_Types.h"
-
-extern last_execution_time;
+#include <util/delay.h>
+#include <avr/wdt.h>
+#include <avr/interrupt.h>
 
 
 
-void WDGDrv_Init(void)
-{
-
-    //set max timeout to be 50
-    WWDG->CR &=~(0x3f);  // clear the t[5:0] bits 0011 1111
-    // WWDG->CR |= (((APB1_freq*1000 * 50) / (4096 * 8) - 1 ) & 0x3F );  
-    WWDG->CR |= (((30 *1000 * 50) / (4096 * 8) - 1 ) & 0x3F );  
+int x = 0;
 
 
-    WWDG->CR |= (1<<7); // set bit 7 to activate the WWDG
-    WWDG->CR |= (1<<6); // set bit 6 
+ISR(WDT_vect) {
+    x = 1;
+    PORTB |= (1 << 0); // Set PB0 high
+    // for ( volatile uint32 i = 0; i < 10000000000; i++) {/* Delay loop*/}
+    // _delay_ms(1000); 
+    // WDTCSR = (1 << WDIE);
+}
 
-
-    //enable the early interupt , make the WDGTB to 3 (look at table 64) , Disable window maode by making the window val = upper limit
-    WWDG->CFR |=(0x3ff);
-    Nvic_EnableInterrupt(0);
-
+void WDGDrv_Init(void) {
+    DDRB |= (1 << 0);
+    PORTB &= ~(1 << 0);
+    // Disable global interrupts
+    cli();
+    // SREG &= ~(1 << I);
+    //Interrupt and System Reset Mode
+    wdt_enable(2);
+    WDTCSR = (1 << WDCE) | (1 << WDE);// Set the Watchdog change enable bit and Watchdog system reset enable bit in one operation
+    WDTCSR =  (1 << WDE)|(1 << WDIE) | (1 << WDP1);    // Set the prescaler to 64 seconds and enable the Watchdog interrupt
+    sei(); // Enable global interrupts
+    // SREG |= (1 << I);
+// 
 }
 
 
 void WDGDrv_IsrNotification(void){
-    uint32 current_time = HAL_GetTick();
+    // uint32 current_time = HAL_GetTick();
 
-    if(WDGM_PovideSuppervisionStatus()==NOK && (current_time - last_execution_time) < 100 /*&& the WDGM_MainFunction_is_not_STUCK*/){
-       
-        // refresh the watchdog
-        // WWDG->CR |= ((30*1000 * 50) / (4096 * 2) - 1 );
-        WWDG->CR |= 0x7F;
+    if(WDGM_PovideSuppervisionStatus()==OK  /*&& the WDGM_MainFunction_is_not_STUCK*/){
+       //refresh 
     }else{
         return;
     }
 }
+
+

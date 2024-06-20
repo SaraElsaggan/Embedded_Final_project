@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/Sara/Desktop/Embedded_Final_Project/WatchDog",
+      "program": "c:/Users/Sara/Desktop/Embedded_Final_Project/WatchDog/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
