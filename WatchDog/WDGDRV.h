@@ -1,12 +1,14 @@
+#include "Std_Types.h"
+
 #ifndef WDDRV_H
 #define WDDRV_H
 
 
 #define WDTCSR (*(unsigned long *)( 0x60))
 #define SREG (*(unsigned long *)( 0x3F))
-#define PORTB *((volatile uint8_t*) 0x38) 
-#define DDRB *((volatile uint8_t*) 0x37) 
-#define PINB *((volatile uint8_t*) 0x36) 
+#define PORTB *((volatile uint8*) 0x38) 
+#define DDRB *((volatile uint8*) 0x37) 
+#define PINB *((volatile uint8*) 0x36) 
 
 #define WDP0  0
 #define WDP1  1
