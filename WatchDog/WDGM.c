@@ -1,22 +1,17 @@
 #include "WDGM.h"
 #include "Std_Types.h"
 
-
-#define MF_Delay_Period 20
-#define MF_Duration_Period 100
-static uint8 call_count;
-
 static WDGM_StatusType status;
 static uint32 led_no_calls;
-static uint32 check_time ;
-// uint32 last_execution_time;
+static uint8 call_count;
+static uint32 stuck;
 
 void WDGM_Init(void)
 {
     status = NOK ;
     led_no_calls = 0;
     call_count = 0;
-    //last_execution_time = currenttime;
+    stuck = 0;
 }
 
 void WDGM_MainFunction(void)
@@ -34,8 +29,12 @@ void WDGM_MainFunction(void)
         }
         led_no_calls = 0; // Reset the call counter for the next 100ms period
     }
+    else
+    {
+        stuck = 1; // Indicate potential stuck condition
+    }
     
-    // last_execution_time = current_time;
+    
 }
 
 
