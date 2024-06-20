@@ -1,27 +1,25 @@
 #ifndef WDDRV_H
 #define WDDRV_H
-#include "Std_Types.h"
-
-#define WDG ((Wwdg_Type*) 0x40002C00)
-
-typedef struct {
-    uint32 CR;    // Control Register
-    uint32 CFR;   // Configuration Register
-    uint32 SR;    // Status Register
-} Wwdg_Type;
 
 
+#define WDTCSR (*(unsigned long *)( 0x60))
+#define SREG (*(unsigned long *)( 0x3F))
+#define PORTB *((volatile uint8_t*) 0x38) 
+#define DDRB *((volatile uint8_t*) 0x37) 
+#define PINB *((volatile uint8_t*) 0x36) 
 
-#define GPIOB_BASE_ADDR 0x40020400								   // this is the base addres of the gpio
-#define GPIOB_MODER   (*(unsigned long *)(GPIOB_BASE_ADDR + 0x00)) // mode regestor to spscfiy the mode of the pin
-#define GPIOB_OTYPER  (*(unsigned long *)(GPIOB_BASE_ADDR + 0x04)) //output type to chose push_pull or open drain
-#define GPIOB_ODR     (*(unsigned long *)(GPIOB_BASE_ADDR + 0x14)) //to read the content of the pin
-#define RCC_AHB1ENR   (*(unsigned long *)(0x40023800 + 0x30))
+#define WDP0  0
+#define WDP1  1
+#define WDP2  2
+#define WDE   3
+#define WDCE  4
+#define WDP3  5
+#define WDIE  6
+#define WDIF  7
 
 
+#define I  7
 
-void watchdog_refresh();
-// void refresh(void);
 void WDGDrv_Init(void);
-void WWDG_IRQHandler(void);
+void WDGDrv_IsrNotification(void);
 #endif
