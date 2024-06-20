@@ -17,10 +17,9 @@ void WDGM_Init(void)
 void WDGM_MainFunction(void)
 {
     call_count ++;
-    // Check LEDM calls periodicity every 100ms (5 * 20ms = 100ms)
+    // Check LEDM calls periodicity every 100ms (5 * 20ms = 100ms) first call-> time = 0ms 
     if (call_count <= 6) {
-        call_count = 0; // Reset count for next period
-        // Check number of LEDM calls in last 100ms
+        // Check number of LEDM calls within 100ms
         if (led_no_calls >= 8 && led_no_calls <= 12) // check no. of calls is between 8 and 12 or not
         { 
             status = OK;
@@ -28,23 +27,19 @@ void WDGM_MainFunction(void)
             status = NOK;
         }
         led_no_calls = 0; // Reset the call counter for the next 100ms period
+        call_count = 0; // Reset count for next 100ms period
     }
     else
     {
         stuck = 1; // Indicate potential stuck condition
     }
-    
-    
 }
-
-
 
 
 WDGM_StatusType WDGM_PovideSuppervisionStatus(void)
 {
     return status; // The WDGM state
 }
-
 
 
 

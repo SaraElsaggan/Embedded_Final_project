@@ -5,18 +5,18 @@
 #include <LEDM.h>
 #include <WDGM.h>
 
-
-int main(void) {
-    // Set PB0 as output for the LED
-    DDRB |= (1 << 0);
-    PORTB &= ~(1 << 0);  // Ensure the LED is initially off
-    // WDGDrv_Init();
+void SysInit(void){
+    GPIO_Init();
     LEDM_Init();
     WDGM_Init();
+    // WDGDrv_Init();
+    static uint8 WDGCounter = 0;
+}
 
+int main(void) {
+    SysInit();
     // Call WDGM_MainFunction for the first time
     WDGM_MainFunction();
-    static uint8 WDGCounter = 0;
     // Main loop
     while (1) {
         LEDM_Manage();
