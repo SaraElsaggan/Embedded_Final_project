@@ -1,30 +1,31 @@
-//#include <avr/io.h>
-// #include <avr/interrupt.h>
-// #include <avr/wdt.h>
 #include "WDGDRV.h"
+#include <util/delay.h>
+#include <GPIO.h>
+#include <LEDM.h>
+#include <WDGM.h>
 
-static void delay(uint32 time){
-    volatile uint32 i;
-    time *= 1000;
-    for ( i = 0 ; i<time;i++){}
-}
 
 int main(void) {
     // Set PB0 as output for the LED
-    DDRB |= (1 << 0);
-    PORTB &= ~(1 << 0);  // Ensure the LED is initially off
-    WDGDrv_Init();
+	GPIO_Init();
+
+     // WDGDrv_Init();
     // LEDM_Init();
     // WDGM_Init();
-    // Main loop
+
+    int counter = 1;
+    LEDM_Manage();
+    WDGM_MainFunction();
     while (1) {
-        // delay(10);
-        // LEDM_Manage();
+         _delay_ms(10);         // Wait for 10 milliseconds
+         LEDM_Manage();
+         if (counter == 2)
+         {
+           WDGM_MainFunction();
+           counter = 1;
+         }
+         counter++;
 
-        // // Call WDGM_MainFunction every 20ms
-        // delay(20);
-        // WDGM_MainFunction();
     }
-
     return 0;
 }

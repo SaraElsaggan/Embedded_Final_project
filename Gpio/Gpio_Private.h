@@ -2,22 +2,15 @@
 #define GPIO_PRIVATE_H
 #include "Utils.h"
 
-#define GPIOA_BASE_ADDR    0x40020000
-#define GPIOB_BASE_ADDR    0x40020400
-#define GPIOC_BASE_ADDR    0x40020800
-#define GPIOD_BASE_ADDR    0x40020C00
+#define GPIOB_BASE_ADDR    0x23
+#define GPIOC_BASE_ADDR    0x26
+#define GPIOD_BASE_ADDR    0x29
 
 typedef struct {
-	uint32 GPIO_MODER;
-	uint32 GPIO_OTYPER;
-	uint32 GPIO_OSPEEDR;
-	uint32 GPIO_PUPDR;
-	uint32 GPIO_IDR;
-	uint32 GPIO_ODR;
-	uint32 GPIO_BSRR;
-	uint32 GPIO_LCKR;
-	uint32 GPIO_AFRL;
-	uint32 GPIO_AFRH;
+	uint8 PIN;
+	uint8 DDR;
+	uint8 PORT;
+
 } GpioType;
 
 #endif

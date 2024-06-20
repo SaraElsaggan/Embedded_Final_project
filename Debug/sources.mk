@@ -23,7 +23,6 @@ SUBDIRS := \
 Gpio \
 Led \
 Nvic \
-Rcc \
 WatchDog \
 src \
 

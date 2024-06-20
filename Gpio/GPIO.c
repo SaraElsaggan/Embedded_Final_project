@@ -1,22 +1,20 @@
 #include "GPIO.h"
 #include "Gpio_Private.h"
-#include "Rcc.h"
 
-uint32 GPIO_Addresses[2] = { 0x40020000, 0x40020400}; // for port A and B only
+GpioType* const GPIO_Addresses[3] = { (GpioType*)GPIOB_BASE_ADDR, (GpioType*)GPIOC_BASE_ADDR, (GpioType*)GPIOD_BASE_ADDR };
 
 void GPIO_Init(void)
 {
-    GpioType * gpioReg =  GPIO_Addresses[LED_PORT_ID];
-	gpioReg->GPIO_MODER &= ~(0x3 << (2 * LED_PIN_ID));
-	gpioReg->GPIO_MODER |= (0x01 << (2 * LED_PIN_ID));
-	gpioReg->GPIO_OTYPER  &= ~(0x01 << LED_PIN_ID);
-	gpioReg->GPIO_OTYPER |= (0x00 << LED_PIN_ID);
-	// gpioReg->GPIO_PUPDR &= ~(0x3 << (2 * LED_PIN_ID));
+    GpioType* gpioReg = GPIO_Addresses[LED_PORT_ID];
+	gpioReg->DDR |= (1 << LED_PIN_ID);
+
 }
 
-void GPIO_Write(unsigned char PinId, unsigned char PinData)
-{
-	GpioType * gpioReg =  GPIO_Addresses[LED_PORT_ID];
-	gpioReg->GPIO_ODR &= ~(0x01 << PinId);
-	gpioReg->GPIO_ODR |= (PinData << PinId);
+void GPIO_Write(unsigned char PinId, unsigned char PinData) {
+    GpioType* gpioReg = GPIO_Addresses[LED_PORT_ID];
+    if (PinData) {
+        gpioReg->PORT |= (1 << PinId); // Set the pin
+    } else {
+        gpioReg->PORT &= ~(1 << PinId); // Clear the pin
+    }
 }
