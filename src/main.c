@@ -22,17 +22,19 @@ int main(void){
 
 //    initialization.
     LEDM_Init();
-//    WDGDrv_Init();
-//    WDGM_Init();
+    WDGDrv_Init();
+    WDGM_Init();
 
 
     while (1) {
         // Call LEDM_Manage every 10ms
-    	delay(10);
+//    	delay(10);
+    	HAL_Delay(10);
         LEDM_Manage();
 
         // Call WDGM_MainFunction every 20ms
-        delay(20);
+//        delay(20);
+    	HAL_Delay(20);
         WDGM_MainFunction();
 
     }
