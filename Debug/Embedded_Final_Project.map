@@ -1,43 +1,41 @@
 Archive member included to satisfy reference by file (symbol)
 
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
-                              c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o (exit)
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                              c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o (exit)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
                               ./Nvic/Nvic.o (__do_copy_data)
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
-                              ./WatchDog/WDGDRV.o (__do_clear_bss)
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                              ./src/main.o (__do_clear_bss)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
                               ./src/main.o (__ltsf2)
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
                               ./src/main.o (__fixunssfsi)
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
-                              c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o) (__fp_cmp)
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
-                              c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o) (__fp_splitA)
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
-                              c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o) (__fp_zero)
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                              c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o) (__fp_cmp)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                              c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o) (__fp_splitA)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                              c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o) (__fp_zero)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
                               ./src/main.o (__gtsf2)
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
                               ./src/main.o (__mulsf3)
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
-                              c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o) (__mulsf3x)
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
-                              c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o) (__fp_inf)
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
-                              c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o) (__fp_nan)
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
-                              c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o) (__fp_pscA)
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
-                              c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o) (__fp_pscB)
-c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
-                              c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o) (__fp_round)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                              c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o) (__mulsf3x)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                              c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o) (__fp_inf)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                              c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o) (__fp_nan)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                              c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o) (__fp_pscA)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                              c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o) (__fp_pscB)
+c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                              c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o) (__fp_round)
 
 Allocating common symbols
 Common symbol       size              file
 
-last_execution_time
-                    0x4               ./WatchDog/WDGM.o
 time_counter        0x4               ./Led/LEDM.o
 
 Discarded input sections
@@ -103,7 +101,7 @@ user_signatures  0x0000000000850000 0x0000000000000400 rw !x
 Linker script and memory map
 
 Address of section .data set to 0x800100
-LOAD c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+LOAD c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
 LOAD ./src/main.o
 LOAD ./WatchDog/WDGDRV.o
 LOAD ./WatchDog/WDGM.o
@@ -111,10 +109,10 @@ LOAD ./Nvic/Nvic.o
 LOAD ./Led/LEDM.o
 LOAD ./Gpio/GPIO.o
 START GROUP
-LOAD c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a
-LOAD c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a
-LOAD c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a
-LOAD c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libatmega328p.a
+LOAD c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a
+LOAD c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a
+LOAD c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a
+LOAD c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libatmega328p.a
 END GROUP
                 0x0000000000000000                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
                 [0x0000000000800100]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
@@ -216,9 +214,9 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000      0x8c8
+.text           0x0000000000000000      0x86a
  *(.vectors)
- .vectors       0x0000000000000000       0x68 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .vectors       0x0000000000000000       0x68 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
                 0x0000000000000000                __vector_default
                 0x0000000000000000                __vectors
  *(.vectors)
@@ -246,20 +244,20 @@ END GROUP
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x0000000000000068        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .init0         0x0000000000000068        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
                 0x0000000000000068                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x0000000000000068        0xc c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .init2         0x0000000000000068        0xc c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x0000000000000074       0x16 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .init4         0x0000000000000074       0x16 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
                 0x0000000000000074                __do_copy_data
- .init4         0x000000000000008a       0x10 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .init4         0x000000000000008a       0x10 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
                 0x000000000000008a                __do_clear_bss
  *(.init4)
  *(.init5)
@@ -271,10 +269,10 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x000000000000009a        0x8 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .init9         0x000000000000009a        0x8 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
  *(.init9)
  *(.text)
- .text          0x00000000000000a2        0x4 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .text          0x00000000000000a2        0x4 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
                 0x00000000000000a2                __vector_22
                 0x00000000000000a2                __vector_1
                 0x00000000000000a2                __vector_24
@@ -306,156 +304,156 @@ END GROUP
  .text          0x00000000000000a6        0x0 ./Nvic/Nvic.o
  .text          0x00000000000000a6        0x0 ./Led/LEDM.o
  .text          0x00000000000000a6        0x0 ./Gpio/GPIO.o
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
- .text          0x00000000000000a6        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .text          0x00000000000000a6        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
                 0x00000000000000a6                . = ALIGN (0x2)
  *(.text.*)
- .text.main     0x00000000000000a6      0x128 ./src/main.o
+ .text.main     0x00000000000000a6      0x14a ./src/main.o
                 0x00000000000000a6                main
  .text.__vector_6
-                0x00000000000001ce       0x54 ./WatchDog/WDGDRV.o
-                0x00000000000001ce                __vector_6
+                0x00000000000001f0       0x54 ./WatchDog/WDGDRV.o
+                0x00000000000001f0                __vector_6
  .text.WDGDrv_Init
-                0x0000000000000222       0x78 ./WatchDog/WDGDRV.o
-                0x0000000000000222                WDGDrv_Init
+                0x0000000000000244       0x78 ./WatchDog/WDGDRV.o
+                0x0000000000000244                WDGDrv_Init
  .text.WDGDrv_IsrNotification
-                0x000000000000029a       0x12 ./WatchDog/WDGDRV.o
-                0x000000000000029a                WDGDrv_IsrNotification
+                0x00000000000002bc       0x12 ./WatchDog/WDGDRV.o
+                0x00000000000002bc                WDGDrv_IsrNotification
  .text.WDGM_Init
-                0x00000000000002ac       0x36 ./WatchDog/WDGM.o
-                0x00000000000002ac                WDGM_Init
+                0x00000000000002ce       0x2a ./WatchDog/WDGM.o
+                0x00000000000002ce                WDGM_Init
  .text.WDGM_MainFunction
-                0x00000000000002e2       0xe6 ./WatchDog/WDGM.o
-                0x00000000000002e2                WDGM_MainFunction
+                0x00000000000002f8       0x72 ./WatchDog/WDGM.o
+                0x00000000000002f8                WDGM_MainFunction
  .text.WDGM_PovideSuppervisionStatus
-                0x00000000000003c8       0x12 ./WatchDog/WDGM.o
-                0x00000000000003c8                WDGM_PovideSuppervisionStatus
+                0x000000000000036a       0x12 ./WatchDog/WDGM.o
+                0x000000000000036a                WDGM_PovideSuppervisionStatus
  .text.WDGM_AlivenessIndication
-                0x00000000000003da       0x36 ./WatchDog/WDGM.o
-                0x00000000000003da                WDGM_AlivenessIndication
+                0x000000000000037c       0x36 ./WatchDog/WDGM.o
+                0x000000000000037c                WDGM_AlivenessIndication
  .text.Nvic_EnableInterrupt
-                0x0000000000000410       0x92 ./Nvic/Nvic.o
-                0x0000000000000410                Nvic_EnableInterrupt
+                0x00000000000003b2       0x92 ./Nvic/Nvic.o
+                0x00000000000003b2                Nvic_EnableInterrupt
  .text.Nvic_DisableInterrupt
-                0x00000000000004a2       0x92 ./Nvic/Nvic.o
-                0x00000000000004a2                Nvic_DisableInterrupt
+                0x0000000000000444       0x92 ./Nvic/Nvic.o
+                0x0000000000000444                Nvic_DisableInterrupt
  .text.LEDM_Init
-                0x0000000000000534       0x28 ./Led/LEDM.o
-                0x0000000000000534                LEDM_Init
+                0x00000000000004d6       0x28 ./Led/LEDM.o
+                0x00000000000004d6                LEDM_Init
  .text.LEDM_Manage
-                0x000000000000055c       0x7a ./Led/LEDM.o
-                0x000000000000055c                LEDM_Manage
+                0x00000000000004fe       0x7a ./Led/LEDM.o
+                0x00000000000004fe                LEDM_Manage
  .text.GPIO_Init
-                0x00000000000005d6       0x32 ./Gpio/GPIO.o
-                0x00000000000005d6                GPIO_Init
+                0x0000000000000578       0x32 ./Gpio/GPIO.o
+                0x0000000000000578                GPIO_Init
  .text.GPIO_Write
-                0x0000000000000608       0x86 ./Gpio/GPIO.o
-                0x0000000000000608                GPIO_Write
+                0x00000000000005aa       0x86 ./Gpio/GPIO.o
+                0x00000000000005aa                GPIO_Write
  .text.libgcc.mul
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.div
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.fixed
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.mul
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.div
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.prologue
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.builtins
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.fmul
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.fixed
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.mul
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.div
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.prologue
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.builtins
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.fmul
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.fixed
-                0x000000000000068e        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000000000000630        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.avr-libc.fplib
-                0x000000000000068e        0xa c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
-                0x000000000000068e                __nesf2
-                0x000000000000068e                __eqsf2
-                0x000000000000068e                __cmpsf2
-                0x000000000000068e                __ltsf2
-                0x000000000000068e                __lesf2
+                0x0000000000000630        0xa c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                0x0000000000000630                __nesf2
+                0x0000000000000630                __eqsf2
+                0x0000000000000630                __cmpsf2
+                0x0000000000000630                __ltsf2
+                0x0000000000000630                __lesf2
  .text.avr-libc.fplib
-                0x0000000000000698       0x5e c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
-                0x0000000000000698                __fixunssfsi
+                0x000000000000063a       0x5e c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                0x000000000000063a                __fixunssfsi
  .text.avr-libc.fplib
-                0x00000000000006f6       0x48 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
-                0x00000000000006f6                __fp_cmp
+                0x0000000000000698       0x48 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                0x0000000000000698                __fp_cmp
  .text.avr-libc.fplib
-                0x000000000000073e       0x44 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
-                0x000000000000073e                __fp_split3
-                0x000000000000074e                __fp_splitA
+                0x00000000000006e0       0x44 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                0x00000000000006e0                __fp_split3
+                0x00000000000006f0                __fp_splitA
  .text.avr-libc.fplib
-                0x0000000000000782        0xe c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
-                0x0000000000000782                __fp_zero
-                0x0000000000000784                __fp_szero
+                0x0000000000000724        0xe c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                0x0000000000000724                __fp_zero
+                0x0000000000000726                __fp_szero
  .text.avr-libc.fplib
-                0x0000000000000790        0xa c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
-                0x0000000000000790                __gesf2
-                0x0000000000000790                __gtsf2
+                0x0000000000000732        0xa c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                0x0000000000000732                __gesf2
+                0x0000000000000732                __gtsf2
  .text.avr-libc.fplib
-                0x000000000000079a        0x8 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
-                0x000000000000079a                __mulsf3
+                0x000000000000073c        0x8 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                0x000000000000073c                __mulsf3
  .text.avr-libc.fplib
-                0x00000000000007a2       0xd2 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
-                0x00000000000007c0                __mulsf3x
-                0x00000000000007c6                __mulsf3_pse
+                0x0000000000000744       0xd2 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                0x0000000000000762                __mulsf3x
+                0x0000000000000768                __mulsf3_pse
  .text.avr-libc.fplib
-                0x0000000000000874        0xc c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
-                0x0000000000000874                __fp_inf
+                0x0000000000000816        0xc c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                0x0000000000000816                __fp_inf
  .text.avr-libc.fplib
-                0x0000000000000880        0x6 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
-                0x0000000000000880                __fp_nan
+                0x0000000000000822        0x6 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                0x0000000000000822                __fp_nan
  .text.avr-libc.fplib
-                0x0000000000000886        0xe c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
-                0x0000000000000886                __fp_pscA
+                0x0000000000000828        0xe c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                0x0000000000000828                __fp_pscA
  .text.avr-libc.fplib
-                0x0000000000000894        0xe c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
-                0x0000000000000894                __fp_pscB
+                0x0000000000000836        0xe c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                0x0000000000000836                __fp_pscB
  .text.avr-libc.fplib
-                0x00000000000008a2       0x22 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
-                0x00000000000008a2                __fp_round
-                0x00000000000008c4                . = ALIGN (0x2)
+                0x0000000000000844       0x22 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                0x0000000000000844                __fp_round
+                0x0000000000000866                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000000000008c4        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
-                0x00000000000008c4                _exit
-                0x00000000000008c4                exit
+ .fini9         0x0000000000000866        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x0000000000000866                _exit
+                0x0000000000000866                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -474,36 +472,36 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000000000008c4        0x4 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x0000000000000866        0x4 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000000000008c8                _etext = .
+                0x000000000000086a                _etext = .
 
-.data           0x0000000000800100       0x12 load address 0x00000000000008c8
+.data           0x0000000000800100       0x12 load address 0x000000000000086a
                 0x0000000000800100                PROVIDE (__data_start, .)
  *(.data)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
  .data          0x0000000000800100        0x0 ./src/main.o
  .data          0x0000000000800100        0x0 ./WatchDog/WDGDRV.o
  .data          0x0000000000800100        0x0 ./WatchDog/WDGM.o
  .data          0x0000000000800100        0x0 ./Nvic/Nvic.o
  .data          0x0000000000800100        0x0 ./Led/LEDM.o
  .data          0x0000000000800100        0x0 ./Gpio/GPIO.o
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
- .data          0x0000000000800100        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .data          0x0000000000800100        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
  *(.data*)
  .data.NVIC_ISER
                 0x0000000000800100        0x6 ./Nvic/Nvic.o
@@ -522,58 +520,58 @@ END GROUP
                 0x0000000000800112                _edata = .
                 0x0000000000800112                PROVIDE (__data_end, .)
 
-.bss            0x0000000000800112       0x18
+.bss            0x0000000000800112       0x12
                 0x0000000000800112                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
  .bss           0x0000000000800112        0x0 ./src/main.o
  .bss           0x0000000000800112        0x0 ./WatchDog/WDGDRV.o
  .bss           0x0000000000800112        0x0 ./WatchDog/WDGM.o
  .bss           0x0000000000800112        0x0 ./Nvic/Nvic.o
  .bss           0x0000000000800112        0x0 ./Led/LEDM.o
  .bss           0x0000000000800112        0x0 ./Gpio/GPIO.o
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
- .bss           0x0000000000800112        0x0 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .bss           0x0000000000800112        0x0 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
  *(.bss*)
- .bss.x         0x0000000000800112        0x2 ./WatchDog/WDGDRV.o
-                0x0000000000800112                x
- .bss.status    0x0000000000800114        0x1 ./WatchDog/WDGM.o
+ .bss.WDGCounter.1657
+                0x0000000000800112        0x1 ./src/main.o
+ .bss.x         0x0000000000800113        0x2 ./WatchDog/WDGDRV.o
+                0x0000000000800113                x
+ .bss.call_count
+                0x0000000000800115        0x1 ./WatchDog/WDGM.o
+ .bss.status    0x0000000000800116        0x1 ./WatchDog/WDGM.o
  .bss.led_no_calls
-                0x0000000000800115        0x4 ./WatchDog/WDGM.o
- .bss.start_time
-                0x0000000000800119        0x4 ./WatchDog/WDGM.o
- .bss.current_time
-                0x000000000080011d        0x4 ./WatchDog/WDGM.o
+                0x0000000000800117        0x4 ./WatchDog/WDGM.o
+ .bss.check_time
+                0x000000000080011b        0x4 ./WatchDog/WDGM.o
  .bss.led_state
-                0x0000000000800121        0x1 ./Led/LEDM.o
+                0x000000000080011f        0x1 ./Led/LEDM.o
  *(COMMON)
- COMMON         0x0000000000800122        0x4 ./WatchDog/WDGM.o
-                0x0000000000800122                last_execution_time
- COMMON         0x0000000000800126        0x4 ./Led/LEDM.o
-                0x0000000000800126                time_counter
-                0x000000000080012a                PROVIDE (__bss_end, .)
-                0x00000000000008c8                __data_load_start = LOADADDR (.data)
-                0x00000000000008da                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x0000000000800120        0x4 ./Led/LEDM.o
+                0x0000000000800120                time_counter
+                0x0000000000800124                PROVIDE (__bss_end, .)
+                0x000000000000086a                __data_load_start = LOADADDR (.data)
+                0x000000000000087c                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x000000000080012a        0x0
+.noinit         0x0000000000800124        0x0
                 [!provide]                        PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                        PROVIDE (__noinit_end, .)
-                0x000000000080012a                _end = .
+                0x0000000000800124                _end = .
                 [!provide]                        PROVIDE (__heap_start, .)
 
 .eeprom         0x0000000000810000        0x0
@@ -626,7 +624,7 @@ END GROUP
 .note.gnu.avr.deviceinfo
                 0x0000000000000000       0x40
  .note.gnu.avr.deviceinfo
-                0x0000000000000000       0x40 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x0000000000000000       0x40 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
 
 .note.gnu.build-id
  *(.note.gnu.build-id)
@@ -661,69 +659,69 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000      0xdd9
+.debug_info     0x0000000000000000      0xde0
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x0000000000000000      0x5f4 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_info    0x00000000000005f4      0x164 ./src/main.o
- .debug_info    0x0000000000000758      0x139 ./WatchDog/WDGDRV.o
- .debug_info    0x0000000000000891      0x155 ./WatchDog/WDGM.o
- .debug_info    0x00000000000009e6      0x16a ./Nvic/Nvic.o
- .debug_info    0x0000000000000b50      0x129 ./Led/LEDM.o
- .debug_info    0x0000000000000c79      0x160 ./Gpio/GPIO.o
+ .debug_info    0x0000000000000000      0x5f4 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_info    0x00000000000005f4      0x172 ./src/main.o
+ .debug_info    0x0000000000000766      0x139 ./WatchDog/WDGDRV.o
+ .debug_info    0x000000000000089f      0x14e ./WatchDog/WDGM.o
+ .debug_info    0x00000000000009ed      0x16a ./Nvic/Nvic.o
+ .debug_info    0x0000000000000b57      0x129 ./Led/LEDM.o
+ .debug_info    0x0000000000000c80      0x160 ./Gpio/GPIO.o
 
-.debug_abbrev   0x0000000000000000      0xa3e
+.debug_abbrev   0x0000000000000000      0xa2d
  *(.debug_abbrev)
- .debug_abbrev  0x0000000000000000      0x5a2 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_abbrev  0x0000000000000000      0x5a2 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
  .debug_abbrev  0x00000000000005a2       0xdc ./src/main.o
  .debug_abbrev  0x000000000000067e       0xea ./WatchDog/WDGDRV.o
- .debug_abbrev  0x0000000000000768       0x9d ./WatchDog/WDGM.o
- .debug_abbrev  0x0000000000000805       0xcc ./Nvic/Nvic.o
- .debug_abbrev  0x00000000000008d1       0x8e ./Led/LEDM.o
- .debug_abbrev  0x000000000000095f       0xdf ./Gpio/GPIO.o
+ .debug_abbrev  0x0000000000000768       0x8c ./WatchDog/WDGM.o
+ .debug_abbrev  0x00000000000007f4       0xcc ./Nvic/Nvic.o
+ .debug_abbrev  0x00000000000008c0       0x8e ./Led/LEDM.o
+ .debug_abbrev  0x000000000000094e       0xdf ./Gpio/GPIO.o
 
-.debug_line     0x0000000000000000      0xa52
+.debug_line     0x0000000000000000      0xdab
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x0000000000000000       0x1a c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_line    0x000000000000001a      0x2ad ./src/main.o
- .debug_line    0x00000000000002c7      0x2b5 ./WatchDog/WDGDRV.o
- .debug_line    0x000000000000057c      0x128 ./WatchDog/WDGM.o
- .debug_line    0x00000000000006a4       0xe8 ./Nvic/Nvic.o
- .debug_line    0x000000000000078c      0x1dd ./Led/LEDM.o
- .debug_line    0x0000000000000969       0xe9 ./Gpio/GPIO.o
+ .debug_line    0x0000000000000000       0x1a c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_line    0x000000000000001a      0x3d9 ./src/main.o
+ .debug_line    0x00000000000003f3      0x400 ./WatchDog/WDGDRV.o
+ .debug_line    0x00000000000007f3      0x133 ./WatchDog/WDGM.o
+ .debug_line    0x0000000000000926       0xf3 ./Nvic/Nvic.o
+ .debug_line    0x0000000000000a19      0x29e ./Led/LEDM.o
+ .debug_line    0x0000000000000cb7       0xf4 ./Gpio/GPIO.o
 
-.debug_frame    0x0000000000000000      0x26c
+.debug_frame    0x0000000000000000      0x258
  *(.debug_frame)
  .debug_frame   0x0000000000000000       0x34 ./src/main.o
  .debug_frame   0x0000000000000034       0x94 ./WatchDog/WDGDRV.o
- .debug_frame   0x00000000000000c8       0xa8 ./WatchDog/WDGM.o
- .debug_frame   0x0000000000000170       0x54 ./Nvic/Nvic.o
- .debug_frame   0x00000000000001c4       0x54 ./Led/LEDM.o
- .debug_frame   0x0000000000000218       0x54 ./Gpio/GPIO.o
+ .debug_frame   0x00000000000000c8       0x94 ./WatchDog/WDGM.o
+ .debug_frame   0x000000000000015c       0x54 ./Nvic/Nvic.o
+ .debug_frame   0x00000000000001b0       0x54 ./Led/LEDM.o
+ .debug_frame   0x0000000000000204       0x54 ./Gpio/GPIO.o
 
-.debug_str      0x0000000000000000     0x7d3d
+.debug_str      0x0000000000000000     0x7d67
  *(.debug_str)
- .debug_str     0x0000000000000000      0x208 c:/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_str     0x0000000000000208     0x40af ./src/main.o
-                                       0x4124 (size before relaxing)
- .debug_str     0x00000000000042b7     0x331e ./WatchDog/WDGDRV.o
-                                       0x7407 (size before relaxing)
- .debug_str     0x00000000000075d5       0xbd ./WatchDog/WDGM.o
-                                       0x2fb2 (size before relaxing)
- .debug_str     0x0000000000007692      0x1cc ./Nvic/Nvic.o
-                                       0x30cd (size before relaxing)
- .debug_str     0x000000000000785e      0x3e9 ./Led/LEDM.o
-                                       0x33a4 (size before relaxing)
- .debug_str     0x0000000000007c47       0xf6 ./Gpio/GPIO.o
-                                       0x3019 (size before relaxing)
+ .debug_str     0x0000000000000000      0x208 c:/users/hager/dropbox/pc/downloads/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/avr8-gnu-toolchain-win32_x86_64/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_str     0x0000000000000208     0x40cb ./src/main.o
+                                       0x4138 (size before relaxing)
+ .debug_str     0x00000000000042d3     0x331e ./WatchDog/WDGDRV.o
+                                       0x7412 (size before relaxing)
+ .debug_str     0x00000000000075f1       0xd1 ./WatchDog/WDGM.o
+                                       0x2fd7 (size before relaxing)
+ .debug_str     0x00000000000076c2      0x1c6 ./Nvic/Nvic.o
+                                       0x30d8 (size before relaxing)
+ .debug_str     0x0000000000007888      0x3e9 ./Led/LEDM.o
+                                       0x33af (size before relaxing)
+ .debug_str     0x0000000000007c71       0xf6 ./Gpio/GPIO.o
+                                       0x3024 (size before relaxing)
 
-.debug_loc      0x0000000000000000      0x409
+.debug_loc      0x0000000000000000      0x3d5
  *(.debug_loc)
  .debug_loc     0x0000000000000000       0x47 ./src/main.o
  .debug_loc     0x0000000000000047      0x10c ./WatchDog/WDGDRV.o
- .debug_loc     0x0000000000000153      0x120 ./WatchDog/WDGM.o
- .debug_loc     0x0000000000000273       0x90 ./Nvic/Nvic.o
- .debug_loc     0x0000000000000303       0x76 ./Led/LEDM.o
- .debug_loc     0x0000000000000379       0x90 ./Gpio/GPIO.o
+ .debug_loc     0x0000000000000153       0xec ./WatchDog/WDGM.o
+ .debug_loc     0x000000000000023f       0x90 ./Nvic/Nvic.o
+ .debug_loc     0x00000000000002cf       0x76 ./Led/LEDM.o
+ .debug_loc     0x0000000000000345       0x90 ./Gpio/GPIO.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -752,7 +750,7 @@ END GROUP
  .debug_ranges  0x0000000000000070       0x18 ./Led/LEDM.o
  .debug_ranges  0x0000000000000088       0x18 ./Gpio/GPIO.o
 
-.debug_macro    0x0000000000000000     0x2e1b
+.debug_macro    0x0000000000000000     0x2e27
  *(.debug_macro)
  .debug_macro   0x0000000000000000       0x7f ./src/main.o
  .debug_macro   0x000000000000007f      0xb26 ./src/main.o
@@ -772,14 +770,14 @@ END GROUP
  .debug_macro   0x0000000000002a1f       0x6c ./WatchDog/WDGDRV.o
  .debug_macro   0x0000000000002a8b       0x62 ./WatchDog/WDGDRV.o
  .debug_macro   0x0000000000002aed       0x69 ./WatchDog/WDGDRV.o
- .debug_macro   0x0000000000002b56       0x25 ./WatchDog/WDGM.o
- .debug_macro   0x0000000000002b7b       0x46 ./Nvic/Nvic.o
- .debug_macro   0x0000000000002bc1       0x22 ./Nvic/Nvic.o
- .debug_macro   0x0000000000002be3       0x4f ./Led/LEDM.o
- .debug_macro   0x0000000000002c32       0x1c ./Led/LEDM.o
- .debug_macro   0x0000000000002c4e      0x10e ./Led/LEDM.o
- .debug_macro   0x0000000000002d5c       0x66 ./Led/LEDM.o
- .debug_macro   0x0000000000002dc2       0x43 ./Gpio/GPIO.o
- .debug_macro   0x0000000000002e05       0x16 ./Gpio/GPIO.o
+ .debug_macro   0x0000000000002b56       0x31 ./WatchDog/WDGM.o
+ .debug_macro   0x0000000000002b87       0x46 ./Nvic/Nvic.o
+ .debug_macro   0x0000000000002bcd       0x22 ./Nvic/Nvic.o
+ .debug_macro   0x0000000000002bef       0x4f ./Led/LEDM.o
+ .debug_macro   0x0000000000002c3e       0x1c ./Led/LEDM.o
+ .debug_macro   0x0000000000002c5a      0x10e ./Led/LEDM.o
+ .debug_macro   0x0000000000002d68       0x66 ./Led/LEDM.o
+ .debug_macro   0x0000000000002dce       0x43 ./Gpio/GPIO.o
+ .debug_macro   0x0000000000002e11       0x16 ./Gpio/GPIO.o
 OUTPUT(Embedded_Final_Project.elf elf32-avr)
 LOAD linker stubs
