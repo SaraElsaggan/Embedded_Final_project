@@ -20,7 +20,7 @@ void LEDM_Init(void)
 
 void LEDM_Manage(void)
 {   
-    // PORTB ^= (1 << 2); // to indicate the perodicity of the function
+    PORTB ^= (1 << 2); // to indicate the perodicity of the function
     
 	if (time_counter == 500)
     {

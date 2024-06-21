@@ -13,7 +13,7 @@ ISR(TIMER1_COMPA_vect)
 {
     isr_counter++;
     PORTB ^= (1 << 0); // Set PB0 high
-    // WDGDrv_IsrNotification();
+    WDGDrv_IsrNotification();
 }
 
 void WDGDrv_Init(void)
@@ -30,7 +30,7 @@ void WDGDrv_Init(void)
 
 
     // wdt_reset();
-    MCUSR &= ~(1<<3);
+    // MCUSR &= ~(1<<3);
     // WDTCSR = 0x00;
     WDTCSR = (1 << WDCE) | (1 << WDE); // Set the Watchdog change enable bit and Watchdog system reset enable bit in one operation
     WDTCSR = (1 << WDE) | (1 << WDP1)  ; // Set the prescaler to 64 seconds and enable the Watchdog interrupt
@@ -50,7 +50,7 @@ void WDGDrv_IsrNotification(void)
         {
             stuck = 0;            // The function is not stuck
             wdt_reset(); //  should i do the reset here when not stuck?
-            PORTB ^= (1 << 0); // to indicate the perodicity refreshment of the wdt
+            // PORTB ^= (1 << 0); // to indicate the perodicity refreshment of the wdt
             call_count_50_ms = 0; // Reset for the next 50ms period
         }
         else
@@ -63,7 +63,7 @@ void WDGDrv_IsrNotification(void)
         if (WDGM_PovideSuppervisionStatus() == OK && (!stuck))
         {
             wdt_reset();
-            PORTB ^= (1 << 0); // to indicate the perodicity refreshment of the wdt
+            // PORTB ^= (1 << 0); // to indicate the perodicity refreshment of the wdt
 
         }
         else

@@ -27,12 +27,10 @@
 #define TOIE1  0
 
 
+#define DDRB  (*(volatile uint8_t *)0x24)
+#define PORTB (*(volatile uint8_t *)0x25)
+#define PINB  (*(volatile uint8_t *)0x23)
 
-
-// #define SREG (*(volatile uint8 *)( 0x3F))
-// #define PORTB *((volatile uint8*) 0x05) 
-// #define DDRB *((volatile uint8*) 0x04) 
-// #define PINB *((volatile uint8*) 0x03) 
 
 #define WDP0  0
 #define WDP1  1
