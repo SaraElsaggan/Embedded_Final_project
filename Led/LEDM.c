@@ -20,7 +20,8 @@ void LEDM_Init(void)
 
 void LEDM_Manage(void)
 {   
-    wdt_reset(); // refresh the watchdog timer not trigger a reset during the initialization process
+    // wdt_reset(); // refresh the watchdog timer not trigger a reset during the initialization process
+    PORTB ^= (1 << 2);
     
 	if (time_counter == 500)
     {

@@ -3,48 +3,57 @@
 #include <avr/wdt.h>
 
 static WDGM_StatusType status;
-extern call_count;
+extern call_count_100_ms;
+// extern call_count_50_ms;
 static volatile uint32 led_no_calls;
 uint32 stuck;
 
 void WDGM_Init(void)
 {
-    status = NOK ;
+    status = NOK;
     led_no_calls = 0;
     stuck = 0;
 }
 
 void WDGM_MainFunction(void)
 {
-
-    wdt_reset(); // refresh the watchdog timer not trigger a reset during the initialization process
-    stuck = 1;
-    // Check LEDM calls periodicity every 100ms (5 * 20ms = 100ms) first call-> time = 0ms 
-    if (call_count <= 5) {
+    // Check LEDM calls periodicity every 100ms (5 * 20ms = 100ms) first call-> time = 0ms
+    if (call_count_100_ms <= 5)
+    {
         // Check number of LEDM calls within 100ms
         if (led_no_calls >= 8 && led_no_calls <= 12) // check no. of calls is between 8 and 12 or not
-        { 
+        {
             status = OK;
-        } else {
+        }
+        else
+        {
             status = NOK;
         }
-    }else{
-        led_no_calls = 0; // Reset the call counter for the next 100ms period
-        call_count = 1; //return the call count for the next 100ms period
     }
-    stuck = 0;
+    else
+    {
+        led_no_calls = 0; // Reset the call counter for the next 100ms period
+        call_count_100_ms = 1;   // return the call count for the next 100ms period
+    }
+    
+    // // After 50ms check if the call_count is 2
+    // if (call_count_50_ms >= 2)
+    // {
+    //     stuck = 0; // The function is not stuck
+    //     call_count_50_ms = 0; // Reset for the next 50ms period
+    // }
+    // else
+    // {
+    //     stuck = 1; // The function might be stuck
+    // }
 }
-
-
 
 WDGM_StatusType WDGM_PovideSuppervisionStatus(void)
 {
     return status; // The WDGM state
 }
 
-
-
 void WDGM_AlivenessIndication(void)
 {
-	led_no_calls++; // increment correct calls counter each time LEDM_Manage is called this
+    led_no_calls++; // increment correct calls counter each time LEDM_Manage is called this
 }

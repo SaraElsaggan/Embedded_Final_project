@@ -5,6 +5,7 @@
 
 
 #define WDTCSR (*(volatile uint8 *)( 0x60))
+// #define MCUSR (*(volatile uint8 *)( 0x34))
 
 
 #define TCCR1B (*(volatile uint8 *)( 0x81))
