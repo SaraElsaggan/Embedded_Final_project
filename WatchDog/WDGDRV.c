@@ -14,7 +14,7 @@
 
 ISR(TIMER1_COMPA_vect) {
     PORTB ^= (1 << 0); // Set PB0 high
-    // wdt_reset(); // Reset the watchdog timer
+    wdt_reset(); // Reset the watchdog timer
 
     // for ( volatile uint32 i = 0; i < 10000000000; i++) {/* Delay loop*/}
     // _delay_ms(1000); 
@@ -47,7 +47,7 @@ void WDGDrv_Init(void) {
     //Interrupt and System Reset Mode
     // wdt_enable(2);
     WDTCSR = (1 << WDCE) | (1 << WDE);// Set the Watchdog change enable bit and Watchdog system reset enable bit in one operation
-    WDTCSR =  (1 << WDE) | (1 << WDP1) | (1 << WDP0)  | (1 << WDP2)    ;    // Set the prescaler to 64 seconds and enable the Watchdog interrupt
+    WDTCSR =  (1 << WDE) | (1 << WDP1)     ;    // Set the prescaler to 64 seconds and enable the Watchdog interrupt
     sei(); // Enable global interrupts
     // SREG |= (1 << I);
 // 
