@@ -5,7 +5,7 @@
 
 
 #define WDTCSR (*(volatile uint8 *)( 0x60))
-// #define MCUSR (*(volatile uint8 *)( 0x34))
+#define MCUSR (*(volatile uint8 *)( 0x34))
 
 
 #define TCCR1B (*(volatile uint8 *)( 0x81))
@@ -29,10 +29,10 @@
 
 
 
-#define SREG (*(volatile uint8 *)( 0x3F))
-#define PORTB *((volatile uint8*) 0x38) 
-#define DDRB *((volatile uint8*) 0x37) 
-#define PINB *((volatile uint8*) 0x36) 
+// #define SREG (*(volatile uint8 *)( 0x3F))
+// #define PORTB *((volatile uint8*) 0x05) 
+// #define DDRB *((volatile uint8*) 0x04) 
+// #define PINB *((volatile uint8*) 0x03) 
 
 #define WDP0  0
 #define WDP1  1

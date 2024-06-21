@@ -16,7 +16,7 @@ void WDGM_Init(void)
 
 void WDGM_MainFunction(void)
 {
-    PORTB ^= (1 << 3); // to indicate the perodicity of the function
+    // PORTB ^= (1 << 3); // to indicate the perodicity of the function
     // Check LEDM calls periodicity every 100ms (5 * 20ms = 100ms) first call-> time = 0ms
     if (call_count_100_ms <= 5)
     {

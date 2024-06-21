@@ -12,12 +12,13 @@ uint32 isr_counter = 0;
 ISR(TIMER1_COMPA_vect)
 {
     isr_counter++;
-    // PORTB ^= (1 << 0); // Set PB0 high
-    WDGDrv_IsrNotification();
+    PORTB ^= (1 << 0); // Set PB0 high
+    // WDGDrv_IsrNotification();
 }
 
 void WDGDrv_Init(void)
 {
+    cli();                             // Enable global interrupts
 
     // configure the timer
     TCCR1B |= (1 << WGM12);
@@ -28,12 +29,11 @@ void WDGDrv_Init(void)
     TIMSK1 |= (1 << OCIE1A);
 
 
-    cli();                             // Enable global interrupts
-    wdt_reset();
+    // wdt_reset();
     MCUSR &= ~(1<<3);
     // WDTCSR = 0x00;
     WDTCSR = (1 << WDCE) | (1 << WDE); // Set the Watchdog change enable bit and Watchdog system reset enable bit in one operation
-    WDTCSR = (1 << WDE) | (1 << WDP0)  ; // Set the prescaler to 64 seconds and enable the Watchdog interrupt
+    WDTCSR = (1 << WDE) | (1 << WDP1)  ; // Set the prescaler to 64 seconds and enable the Watchdog interrupt
     // WDTCSR = (1 << WDIE) ; // Set the prescaler to 64 seconds and enable the Watchdog interrupt
     sei();                             // Enable global interrupts
         // WDTCSR = (1 << WDE) | (1 << WDP2) | (1 << WDP1); // Set the watchdog to approximately 0.5 seconds
