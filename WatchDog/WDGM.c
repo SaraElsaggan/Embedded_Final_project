@@ -4,7 +4,6 @@
 
 static WDGM_StatusType status;
 extern call_count_100_ms;
-// extern call_count_50_ms;
 static volatile uint32 led_no_calls;
 uint32 stuck;
 
@@ -17,6 +16,7 @@ void WDGM_Init(void)
 
 void WDGM_MainFunction(void)
 {
+    PORTB ^= (1 << 3); // to indicate the perodicity of the function
     // Check LEDM calls periodicity every 100ms (5 * 20ms = 100ms) first call-> time = 0ms
     if (call_count_100_ms <= 5)
     {
@@ -35,23 +35,14 @@ void WDGM_MainFunction(void)
         led_no_calls = 0; // Reset the call counter for the next 100ms period
         call_count_100_ms = 1;   // return the call count for the next 100ms period
     }
-    
-    // // After 50ms check if the call_count is 2
-    // if (call_count_50_ms >= 2)
-    // {
-    //     stuck = 0; // The function is not stuck
-    //     call_count_50_ms = 0; // Reset for the next 50ms period
-    // }
-    // else
-    // {
-    //     stuck = 1; // The function might be stuck
-    // }
 }
+
 
 WDGM_StatusType WDGM_PovideSuppervisionStatus(void)
 {
     return status; // The WDGM state
 }
+
 
 void WDGM_AlivenessIndication(void)
 {
