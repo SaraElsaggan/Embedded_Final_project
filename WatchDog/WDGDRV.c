@@ -8,7 +8,7 @@ extern stuck;
 
 ISR(TIMER1_COMPA_vect) {
     PORTB ^= (1 << 0); // Set PB0 high
-    WDGDrv_IsrNotification();
+    // WDGDrv_IsrNotification();
 }
 
 void WDGDrv_Init(void) {
@@ -21,18 +21,19 @@ void WDGDrv_Init(void) {
     // Enable Timer Compare Interrupt
     TIMSK1 |= (1 << OCIE1A);
 
-    WDTCSR = (1 << WDCE) | (1 << WDE);// Set the Watchdog change enable bit and Watchdog system reset enable bit in one operation
-    WDTCSR =  (1 << WDE) | (1 << WDP1)     ;    // Set the prescaler to 64 seconds and enable the Watchdog interrupt
+    // WDTCSR = (1 << WDCE) | (1 << WDE);// Set the Watchdog change enable bit and Watchdog system reset enable bit in one operation
+    // WDTCSR =  (1 << WDE) | (1 << WDP1);    // Set the prescaler to 64 seconds and enable the Watchdog interrupt
     sei(); // Enable global interrupts
+    // SREG |= (1 << I);
 }
 
 
-void WDGDrv_IsrNotification(void){
-    if(WDGM_PovideSuppervisionStatus()== OK  && (!stuck)){
-        wdt_reset();
-    }else{
-        return;
-    }
-}
+// void WDGDrv_IsrNotification(void){
+//     if(WDGM_PovideSuppervisionStatus()== OK  && (!stuck)){
+//         wdt_reset();
+//     }else{
+//         return;
+//     }
+// }
 
 

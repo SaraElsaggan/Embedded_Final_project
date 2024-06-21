@@ -5,6 +5,7 @@
 #include <WDGM.h>
 
 
+uint32 call_count = 0;
 
 int SysInit(void) {
     DDRB |= (1 << 0);
@@ -12,7 +13,7 @@ int SysInit(void) {
     GPIO_Init();
     LEDM_Init();
     WDGM_Init();
-    // WDGDrv_Init();
+    WDGDrv_Init();
 }
 
 int main(void) {
@@ -30,6 +31,7 @@ int main(void) {
         WDGCounter += 10; // Increment by the delay amount (10ms)
         if (WDGCounter >= 20) {
             WDGM_MainFunction();  // Call watchdog management every 20ms
+            call_count ++;
             WDGCounter = 0; // Reset count after calling WDGM_MainFunction()
         }
     }
