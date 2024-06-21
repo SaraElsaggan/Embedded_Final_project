@@ -4,6 +4,7 @@
 #include "GPIO.h"
 #include "WDGM.h" 
 #include <stdlib.h>
+#include <avr/wdt.h>
 
 uint32 time_counter;
 
@@ -18,7 +19,9 @@ void LEDM_Init(void)
 }
 
 void LEDM_Manage(void)
-{
+{   
+    wdt_reset(); // refresh the watchdog timer not trigger a reset during the initialization process
+    
 	if (time_counter == 500)
     {
 		led_state = ~led_state;

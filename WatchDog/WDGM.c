@@ -1,5 +1,6 @@
 #include "WDGM.h"
 #include "Std_Types.h"
+#include <avr/wdt.h>
 
 static WDGM_StatusType status;
 extern call_count;
@@ -8,13 +9,15 @@ uint32 stuck;
 
 void WDGM_Init(void)
 {
-    status = OK ;
+    status = NOK ;
     led_no_calls = 0;
     stuck = 0;
 }
 
 void WDGM_MainFunction(void)
 {
+
+    wdt_reset(); // refresh the watchdog timer not trigger a reset during the initialization process
     stuck = 1;
     // Check LEDM calls periodicity every 100ms (5 * 20ms = 100ms) first call-> time = 0ms 
     if (call_count <= 5) {

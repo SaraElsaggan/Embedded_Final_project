@@ -21,11 +21,12 @@ int main(void) {
     static uint8 WDGCounter = 0;
 
     // Call WDGM_MainFunction for the first time
+    LEDM_Manage();
     WDGM_MainFunction();
     // Main loop
     while (1) {
-        LEDM_Manage();
-        _delay_ms(10); // wait for 10ms to call LEDM_Manage again 
+        _delay_ms(10);
+        LEDM_Manage();          // wait for 10ms to call LEDM_Manage again 
 
         // wait until 20ms timing for WDGM_MainFunction (even iterations) 
         WDGCounter += 10; // Increment by the delay amount (10ms)
