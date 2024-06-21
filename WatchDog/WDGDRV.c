@@ -13,7 +13,7 @@
 
 
 ISR(TIMER1_COMPA_vect) {
-    PORTB |= (1 << 0); // Set PB0 high
+    PORTB ^= (1 << 0); // Set PB0 high
     // wdt_reset(); // Reset the watchdog timer
 
     // for ( volatile uint32 i = 0; i < 10000000000; i++) {/* Delay loop*/}
@@ -23,16 +23,16 @@ ISR(TIMER1_COMPA_vect) {
 
 void WDGDrv_Init(void) {
 
-    cli();
+    // cli();
     //configure the timer
     TCCR1B |= (1 << WGM12);
 
     // Set the value for a 50ms interval
     // Using a prescaler of 64: (16e6 / 64) = 250000 Hz Timer Frequency
     // 50ms = 0.05s, so OCR1A = 0.05 * 250000 = 12500 - 1 (subtract 1 because it starts from 0)
-    OCR1A = 12499;
+    OCR1A = 779;
 
-    // Set the prescaler to 64
+    // Set the prescaler to 1024
     TCCR1B |= (1 << CS11) | (1 << CS10);
 
     // Enable Timer Compare Interrupt

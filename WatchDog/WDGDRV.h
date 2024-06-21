@@ -4,8 +4,31 @@
 #define WDDRV_H
 
 
-#define WDTCSR (*(unsigned long *)( 0x60))
-#define SREG (*(unsigned long *)( 0x3F))
+#define WDTCSR (*(volatile uint8 *)( 0x60))
+
+
+#define TCCR1B (*(volatile uint8 *)( 0x81))
+#define OCR1A (*(volatile uint8 *)( 0x88))
+#define TIMSK1 (*(volatile uint8 *)( 0x6F))
+
+#define ICNC1  7
+#define ICES1  6
+#define WGM13  4
+#define WGM12  3
+#define CS12  2
+#define CS11  1
+#define CS10  0
+
+
+#define ICIE1  5
+#define OCIE1B  2
+#define OCIE1A  1
+#define TOIE1  0
+
+
+
+
+#define SREG (*(volatile uint8 *)( 0x3F))
 #define PORTB *((volatile uint8*) 0x38) 
 #define DDRB *((volatile uint8*) 0x37) 
 #define PINB *((volatile uint8*) 0x36) 
