@@ -50,7 +50,7 @@ void WDGDrv_IsrNotification(void)
         {
             stuck = 0;            // The function is not stuck
             wdt_reset(); //  should i do the reset here when not stuck?
-            PORTB ^= (1 << 0); // to indicate the perodicity refreshment of the wdt
+            // PORTB ^= (1 << 0); // to indicate the perodicity refreshment of the wdt
             call_count_50_ms = 0; // Reset for the next 50ms period
         }
         else
@@ -63,7 +63,7 @@ void WDGDrv_IsrNotification(void)
         if (WDGM_PovideSuppervisionStatus() == OK && (!stuck))
         {
             wdt_reset();
-            PORTB ^= (1 << 0); // to indicate the perodicity refreshment of the wdt
+            // PORTB ^= (1 << 0); // to indicate the perodicity refreshment of the wdt
 
         }
         else
