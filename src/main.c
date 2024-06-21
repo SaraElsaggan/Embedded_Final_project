@@ -12,8 +12,14 @@ int main(void) {
     GPIO_Init();
     LEDM_Init();
     WDGM_Init();
-    WDGDrv_Init();
-    static uint8 WDGCounter = 0;    // Call WDGM_MainFunction for the first time
+    // WDGDrv_Init();
+}
+
+int main(void) {
+    SysInit();
+    static uint8 WDGCounter = 0;
+
+    // Call WDGM_MainFunction for the first time
     WDGM_MainFunction();
     // Main loop
     while (1) {
