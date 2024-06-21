@@ -26,7 +26,7 @@
 #define OCIE1A  1
 #define TOIE1  0
 
-
+#define SREG (*(volatile uint8 *)( 0x5F))
 #define DDRB  (*(volatile uint8_t *)0x24)
 #define PORTB (*(volatile uint8_t *)0x25)
 #define PINB  (*(volatile uint8_t *)0x23)
