@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <WORKSPACE>
  <FRAME activewindow="0">
-  <PLACEMENT>2c00000002000000030000000083ffff0083ffffffffffffffffffffb90000000c000000c7060000f0030000</PLACEMENT>
+  <PLACEMENT>2c0000000200000003000000ffffffffffffffffffffffffffffffffb90000000c000000c7060000f0030000</PLACEMENT>
   <WINDOW type="default" module="ISIS">
-   <editor metric="0" gridmajor="2540000" mode="00000000" zoom="-1" scale="341" flipped="0" gridminor="254000" gridmode="32" snapidx="2" snap="254000" xcursor="0" orgmode="0" snaprange="127000">
+   <editor metric="0" gridmajor="2540000" mode="00000000" zoom="0" scale="118" flipped="0" gridminor="254000" gridmode="32" snapidx="2" snap="254000" xcursor="0" orgmode="0" snaprange="127000">
     <world y1="-8890000" x1="-12700000" y2="8890000" x2="12700000"/>
-    <centre x="-399620" y="-108375"/>
+    <centre x="0" y="0"/>
     <origin x="0" y="0"/>
    </editor>
   </WINDOW>
@@ -18,9 +18,9 @@
   </editor>
  </MODULE>
  <MODULE name="ISIS">
-  <editor metric="0" gridmajor="2540000" mode="00000000" zoom="-1" scale="341" flipped="0" gridminor="254000" gridmode="32" snapidx="2" snap="254000" xcursor="0" orgmode="0" snaprange="127000">
+  <editor metric="0" gridmajor="2540000" mode="00000000" zoom="0" scale="118" flipped="0" gridminor="254000" gridmode="32" snapidx="2" snap="254000" xcursor="0" orgmode="0" snaprange="127000">
    <world y1="-8890000" x1="-12700000" y2="8890000" x2="12700000"/>
-   <centre x="-399620" y="-108375"/>
+   <centre x="0" y="0"/>
    <origin x="0" y="0"/>
   </editor>
  </MODULE>
@@ -28,14 +28,14 @@
   <PWI>
    <POPUP w="1015" x="29" flags="00000003" y="104" h="275" pid="0" iid="-1">
     <PROPERTIES>
-     <ITEM name="Message Column Width">755</ITEM>
+     <ITEM name="Message Column Width">876</ITEM>
      <ITEM name="ShowGrid">No</ITEM>
      <ITEM name="Source Column Width">100</ITEM>
      <ITEM name="Time Column Width">120</ITEM>
      <ITEM name="Version">100</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="638" x="33" flags="00008033" y="368" h="563" pid="1" iid="-1">
+   <POPUP w="638" x="168" flags="00008033" y="576" h="563" pid="1" iid="-1">
     <PROPERTIES>
      <ITEM name="Address Column Width">82</ITEM>
      <ITEM name="AutoResize">No</ITEM>
@@ -44,6 +44,9 @@
      <ITEM name="Item 1">"WDTCSR","0x0060",00000001,0000000D,64,1,2,CAEB0000,0,00000000,00000000</ITEM>
      <ITEM name="Item 2">"MCUSR","0x0054",00000001,0000000D,52,1,2,5F230000,0,00000000,00000000</ITEM>
      <ITEM name="Item 3">"x","00800114",00000001,0000000E,276,2,3,00000003,0,00000000,00000000</ITEM>
+     <ITEM name="Item 4">"TIMSK1","0x006F",00000001,0000000D,79,1,2,248B0000,0,00000000,00000000</ITEM>
+     <ITEM name="Item 5">"TIMSK0","0x006E",00000001,0000000D,78,1,2,1C590000,0,00000000,00000000</ITEM>
+     <ITEM name="Item 6">"TCCR1B","0x0081",00000001,0000000D,97,1,2,FDE00000,0,00000000,00000000</ITEM>
      <ITEM name="Name Column Width">82</ITEM>
      <ITEM name="ShowAddresses">Yes</ITEM>
      <ITEM name="ShowPreviousValues">No</ITEM>
@@ -53,7 +56,7 @@
      <ITEM name="Value Column Width">82</ITEM>
      <ITEM name="Version">100</ITEM>
      <ITEM name="Watch Expression Column Width">82</ITEM>
-     <ITEM name="nItems">4</ITEM>
+     <ITEM name="nItems">7</ITEM>
     </PROPERTIES>
    </POPUP>
    <POPUP w="30" x="88" flags="00000008" y="200" h="16" pid="3" iid="1">
@@ -89,7 +92,7 @@
      <ITEM name="TopLineAddress">00000000</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="16" x="168" flags="80000000" y="280" h="32" pid="14" iid="1">
+   <POPUP w="16" x="168" flags="00000000" y="280" h="32" pid="14" iid="1">
     <PROPERTIES>
      <ITEM name="DataType">2</ITEM>
      <ITEM name="DispChars">Yes</ITEM>

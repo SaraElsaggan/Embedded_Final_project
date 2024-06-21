@@ -1,33 +1,40 @@
-#include "WDGDRV.h"
-#include <util/delay.h>
+#include <avr/io.h>
+#include <avr/interrupt.h>
 
-#include <GPIO.h>
-#include <LEDM.h>
-#include <WDGM.h>
+void setup() {
+    // Set CTC mode
+    TCCR1A = 0; // Clear Timer/Counter Control Register A
+    TCCR1B = 0; // Clear Timer/Counter Control Register B
+    TCCR1B |= (1 << WGM12); // Set CTC mode (WGM12: Waveform Generation Mode bit 12)
+    
+    // Set the compare match value for 50ms
+    OCR1A = 12499; // Compare match register value (16MHz / (64 * (12499 + 1)) = 50Hz)
+    
+    // Set the prescaler to 64
+    TCCR1B |= (1 << CS11) | (1 << CS10); // CS11 and CS10 bits set to 1: Prescaler = 64
+    
+    // Enable the Timer1 compare match interrupt
+    TIMSK1 |= (1 << OCIE1A); // Output Compare A Match Interrupt Enable
+    
+    // Set PB0 as an output pin
+    DDRB |= (1 << DDB0);
+    
+    // Enable global interrupts
+    sei();
+}
 
-void SysInit(void){
-    GPIO_Init();
-    LEDM_Init();
-    WDGM_Init();
-    // WDGDrv_Init();
-    static uint8 WDGCounter = 0;
+// ISR to be called every 50ms
+ISR(TIMER1_COMPA_vect) {
+    // Toggle the LED on PB0
+    PORTB ^= (1 << PORTB0);
 }
 
 int main(void) {
-    SysInit();
-    // Call WDGM_MainFunction for the first time
-    WDGM_MainFunction();
-    // Main loop
+    setup(); // Call the setup function
+    
     while (1) {
-        LEDM_Manage();
-        _delay_ms(10); // wait for 10ms to call LEDM_Manage again 
-
-        // wait until 20ms timing for WDGM_MainFunction (even iterations) 
-        WDGCounter += 10; // Increment by the delay amount (10ms)
-        if (WDGCounter >= 20) {
-            WDGM_MainFunction();  // Call watchdog management every 20ms
-            WDGCounter = 0; // Reset count after calling WDGM_MainFunction()
-        }
+        // Main loop does nothing, all work is done in ISR
     }
-    return 0;
+    
+    return 0; // Although this line will never be reached
 }
