@@ -3,13 +3,16 @@
 #include <GPIO.h>
 #include <LEDM.h>
 #include <WDGM.h>
+#include <avr/io.h>
+
+
 
 
 int main(void) {
     // Set PB0 as output for the LED
 	GPIO_Init();
 
-     WDGDrv_Init();
+    WDGDrv_Init();
     LEDM_Init();
     WDGM_Init();
 
