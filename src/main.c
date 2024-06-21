@@ -6,7 +6,7 @@
 
 
 
-int main(void) {
+int SysInit(void) {
     DDRB |= (1 << 0);
     PORTB &= ~(1 << 0);
     GPIO_Init();

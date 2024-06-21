@@ -27,6 +27,7 @@ void WDGM_MainFunction(void)
             status = NOK;
         }
         led_no_calls = 0; // Reset the call counter for the next 100ms period
+        call_count = 0; // Reset count for next period
     }
     else
     {

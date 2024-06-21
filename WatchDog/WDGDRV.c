@@ -28,7 +28,7 @@ void WDGDrv_Init(void) {
 
 
 void WDGDrv_IsrNotification(void){
-    if(WDGM_PovideSuppervisionStatus()==OK  && (!stuck)){
+    if(WDGM_PovideSuppervisionStatus()== OK  && (!stuck)){
         wdt_reset();
     }else{
         return;
