@@ -4,7 +4,7 @@
 static WDGM_StatusType status;
 static uint32 led_no_calls;
 static uint8 call_count;
-static uint32 stuck;
+ uint32 stuck;
 
 void WDGM_Init(void)
 {
@@ -27,7 +27,6 @@ void WDGM_MainFunction(void)
             status = NOK;
         }
         led_no_calls = 0; // Reset the call counter for the next 100ms period
-        call_count = 0; // Reset count for next 100ms period
     }
     else
     {
