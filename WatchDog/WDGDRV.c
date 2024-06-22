@@ -7,11 +7,11 @@
 
 extern stuck;
 extern call_count_50_ms;
-uint32 isr_counter = 0;
+// uint32 isr_counter = 0;
 
 ISR(TIMER1_COMPA_vect)
 {
-    isr_counter++;
+    // isr_counter++;
     // PORTB ^= (1 << 0); // Set PB0 high
     WDGDrv_IsrNotification();
 }
@@ -40,13 +40,11 @@ void WDGDrv_Init(void)
 
 void WDGDrv_IsrNotification(void)
 {
-    if ((isr_counter % 2) != 0) // when time is 50 , 150 , 250 and so on
-    {
         // check call_count(times WDGM_MainFunction is called) is 2 or more
         if (call_count_50_ms >= 2)
         {
             stuck = 0;            // The function is not stuck
-            wdt_reset(); //  should i do the reset here when not stuck?
+            wdt_reset();
             PORTB ^= (1 << 0); // to indicate the perodicity refreshment of the wdt
             call_count_50_ms = 0; // Reset for the next 50ms period
         }
@@ -54,9 +52,6 @@ void WDGDrv_IsrNotification(void)
         {
             stuck = 1; // The function might be stuck
         }
-    }
-    else  // if in 100 , 200 , 300 and so on
-    {
         if (WDGM_PovideSuppervisionStatus() == OK && (!stuck))
         {
             wdt_reset();
@@ -67,5 +62,4 @@ void WDGDrv_IsrNotification(void)
             // leave the wdt to reset 
             return;
         }
-    }
 }
