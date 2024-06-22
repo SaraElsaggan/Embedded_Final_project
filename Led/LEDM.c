@@ -28,7 +28,7 @@ void LEDM_Manage(void)
 		GPIO_Write(LED_PIN_ID, led_state);
 		time_counter = 0;
     }
-	// time_counter += 5;
-	time_counter += 10;
+	time_counter += 5;
+	// time_counter += 10;
     // WDGM_AlivenessIndication(); // to count the number of function calls
 }

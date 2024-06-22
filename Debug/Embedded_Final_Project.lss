@@ -148,25 +148,25 @@ int main(void) {
 	#endif
 
 	__builtin_avr_delay_cycles(__ticks_dc);
-  ce:	83 ec       	ldi	r24, 0xC3	; 195
-  d0:	99 e0       	ldi	r25, 0x09	; 9
+  ce:	81 ee       	ldi	r24, 0xE1	; 225
+  d0:	94 e0       	ldi	r25, 0x04	; 4
   d2:	01 97       	sbiw	r24, 0x01	; 1
   d4:	f1 f7       	brne	.-4      	; 0xd2 <main+0x12>
   d6:	00 c0       	rjmp	.+0      	; 0xd8 <main+0x18>
   d8:	00 00       	nop
     // Main loop
     while (1) {
-        _delay_ms(10);
-        // _delay_ms(5);
+        // _delay_ms(10);
+        _delay_ms(5);
         LEDM_Manage();          // wait for 10ms to call LEDM_Manage again 
   da:	0e 94 e5 01 	call	0x3ca	; 0x3ca <LEDM_Manage>
 
         // wait until 20ms timing for WDGM_MainFunction (even iterations) 
-        // WDGCounter += 5; // Increment by the delay amount (10ms)
-        WDGCounter += 10; // Increment by the delay amount (10ms)
+        WDGCounter += 5; // Increment by the delay amount (5ms)
   de:	80 91 12 01 	lds	r24, 0x0112	; 0x800112 <__data_end>
-  e2:	86 5f       	subi	r24, 0xF6	; 246
+  e2:	8b 5f       	subi	r24, 0xFB	; 251
   e4:	80 93 12 01 	sts	0x0112, r24	; 0x800112 <__data_end>
+        // WDGCounter += 10; // Increment by the delay amount (10ms)
         if (WDGCounter >= 20) {
   e8:	84 31       	cpi	r24, 0x14	; 20
   ea:	88 f3       	brcs	.-30     	; 0xce <main+0xe>
@@ -665,19 +665,19 @@ void LEDM_Manage(void)
  404:	10 92 2b 01 	sts	0x012B, r1	; 0x80012b <time_counter+0x2>
  408:	10 92 2c 01 	sts	0x012C, r1	; 0x80012c <time_counter+0x3>
     }
-	// time_counter += 5;
-	time_counter += 10;
+	time_counter += 5;
  40c:	80 91 29 01 	lds	r24, 0x0129	; 0x800129 <time_counter>
  410:	90 91 2a 01 	lds	r25, 0x012A	; 0x80012a <time_counter+0x1>
  414:	a0 91 2b 01 	lds	r26, 0x012B	; 0x80012b <time_counter+0x2>
  418:	b0 91 2c 01 	lds	r27, 0x012C	; 0x80012c <time_counter+0x3>
- 41c:	0a 96       	adiw	r24, 0x0a	; 10
+ 41c:	05 96       	adiw	r24, 0x05	; 5
  41e:	a1 1d       	adc	r26, r1
  420:	b1 1d       	adc	r27, r1
  422:	80 93 29 01 	sts	0x0129, r24	; 0x800129 <time_counter>
  426:	90 93 2a 01 	sts	0x012A, r25	; 0x80012a <time_counter+0x1>
  42a:	a0 93 2b 01 	sts	0x012B, r26	; 0x80012b <time_counter+0x2>
  42e:	b0 93 2c 01 	sts	0x012C, r27	; 0x80012c <time_counter+0x3>
+	// time_counter += 10;
     // WDGM_AlivenessIndication(); // to count the number of function calls
  432:	08 95       	ret
 
