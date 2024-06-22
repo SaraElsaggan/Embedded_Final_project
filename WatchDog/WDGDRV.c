@@ -7,12 +7,10 @@
 
 extern stuck;
 extern call_count_50_ms;
-// uint32 isr_counter = 0;
+uint32 tgrbaa = 0;
 
 ISR(TIMER1_COMPA_vect)
 {
-    // isr_counter++;
-    // PORTB ^= (1 << 0); // Set PB0 high
     WDGDrv_IsrNotification();
 }
 
@@ -38,14 +36,13 @@ void WDGDrv_Init(void)
     SREG |= (1 << I);
 }
 
+
 void WDGDrv_IsrNotification(void)
 {
         // check call_count(times WDGM_MainFunction is called) is 2 or more
         if (call_count_50_ms >= 2)
         {
             stuck = 0;            // The function is not stuck
-            wdt_reset();
-            PORTB ^= (1 << 0); // to indicate the perodicity refreshment of the wdt
             call_count_50_ms = 0; // Reset for the next 50ms period
         }
         else
@@ -59,6 +56,7 @@ void WDGDrv_IsrNotification(void)
         }
         else
         {
+            tgrbaa = 2;
             // leave the wdt to reset 
             return;
         }
