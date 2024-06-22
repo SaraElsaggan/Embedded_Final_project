@@ -30,5 +30,5 @@ void LEDM_Manage(void)
     }
 	// time_counter += 5;
 	time_counter += 10;
-    WDGM_AlivenessIndication(); // to count the number of function calls
+    // WDGM_AlivenessIndication(); // to count the number of function calls
 }

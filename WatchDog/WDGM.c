@@ -1,4 +1,5 @@
 #include "WDGM.h"
+#include "WDGDrv.h"
 #include "Std_Types.h"
 #include <avr/wdt.h>
 
@@ -18,6 +19,7 @@ void WDGM_MainFunction(void)
     PORTB ^= (1 << 3); // to indicate the perodicity of the function
     if(call_count_100_ms == 100)
     {
+        PORTB ^= (1 << 6); // to indicate the perodicity of the function
         // Check number of LEDM calls within 100ms
         if (led_no_calls >= 8 && led_no_calls <= 12) // check no. of calls is between 8 and 12 or not
         {
