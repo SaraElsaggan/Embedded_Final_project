@@ -1,5 +1,6 @@
 #include "WDGDRV.h"
 #include "WDGM.h"
+#include "GPIO.h"
 #include "Std_Types.h"
 #include <avr/wdt.h>
 #include <avr/interrupt.h>

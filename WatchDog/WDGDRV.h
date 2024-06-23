@@ -25,19 +25,16 @@
 #define TIMSK0 (*(volatile uint8 *)(0x6E))
 #define TCCR0B (*(volatile uint8 *)(0x25))
 
+
+
 #define OCIE0A 1
-
-
 #define ICIE1  5
 #define OCIE1B  2
 #define OCIE1A  1
 #define TOIE1  0
 
-#define SREG (*(volatile uint8 *)( 0x5F))
-#define DDRB  (*(volatile uint8_t *)0x24)
-#define PORTB (*(volatile uint8_t *)0x25)
-#define PINB  (*(volatile uint8_t *)0x23)
 
+#define SREG (*(volatile uint8 *)( 0x5F))
 
 #define WDP0  0
 #define WDP1  1
@@ -47,7 +44,6 @@
 #define WDP3  5
 #define WDIE  6
 #define WDIF  7
-
 
 #define I  7
 

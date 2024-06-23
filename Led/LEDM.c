@@ -22,8 +22,8 @@ void LEDM_Init(void)
 void LEDM_Manage(void)
 {   
     PORTB ^= (1 << 2); // to indicate the perodicity of the function (10ms)
-	// time_counter += 10;
-	time_counter += 5;
+	time_counter += 10;
+	// time_counter += 5;
 	if (time_counter >= 500)
     {
 		led_state = ~led_state;

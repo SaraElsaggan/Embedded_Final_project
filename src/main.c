@@ -27,14 +27,7 @@ ISR(TIMER0_COMPA_vect)
 
 void SysInit(void)
 {
-    DDRB |= (1 << 0); // reset
-    DDRB |= (1 << 1); // refresh
-    DDRB |= (1 << 2); // ledmange
-    DDRB |= (1 << 3); // WDG_main
-    // DDRB |= (1 << 4);  //led_toggle
-    DDRB |= (1 << 5); // timer
-    DDRB |= (1 << 6); // evey100ms
-    DDRB |= (1 << 7); // evey100ms
+    
     PORTB &= ~(1 << 0);
     GPIO_Init();
     LEDM_Init();
@@ -49,13 +42,13 @@ int main(void)
     PORTB |= (1 << 0); // to monitor the system reset
     while (1)
     {
-        if ((current_time - time_at_last_10ms) >= 5)
-        // if ((current_time - time_at_last_10ms) >= 10)
+        // if ((current_time - time_at_last_10ms) >= 5)
+        if ((current_time - time_at_last_10ms) >= 10)
         {
             time_at_last_10ms = current_time;
             LEDM_Manage();
-            // WDGCounter += 10;
-            WDGCounter += 5;
+            WDGCounter += 10;
+            // WDGCounter += 5;
             if (WDGCounter >= 20)
             {
                 WDGCounter = 0;      // Reset count after calling WDGM_MainFunction()
