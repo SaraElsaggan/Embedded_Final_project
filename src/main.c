@@ -1,18 +1,45 @@
 // #include "WDGDRV.h"
-#include <util/delay.h>
 #include <GPIO.h>
 #include <LEDM.h>
 #include <WDGM.h>
 #include "WDGDRV.h"
+#include <avr/interrupt.h>
+#include <avr/io.h>
+#include "Std_Types.h"
 
-//  #include <avr/io.h>
- #include "Std_Types.h"
-//  #include "Gpio_Private.h"
+uint32 wdg_call_count_within_100_ms = 0;
+uint32 wdg_call_count_within_50_ms = 0;
+volatile unsigned long current_time = 0;
+volatile unsigned long time_at_last_10ms = 0;
+uint32 stuck;
 
-uint32 call_count_100_ms = 0;
-uint32 call_count_50_ms = 0;
+static uint8 WDGCounter = 0;
 
-int SysInit(void) {
+
+void Timer0_Init(void)
+{
+    // Config the timer 
+    TCCR0A = (1 << WGM01);
+
+    // Set compare value for 1ms interrupt
+    OCR0A = 15;
+
+    // Enable Timer Compare Interrupt
+    TIMSK0 = (1 << OCIE0A);
+
+    // Set prescaler to 64 and start Timer0 
+    TCCR0B = (1 << CS01) | (1 << CS00);
+
+    SREG |= (1 << I);
+}
+
+ISR(TIMER0_COMPA_vect)
+{
+	current_time++; // Increment the time variable every 1ms
+}
+
+
+void SysInit(void) {
     DDRB |= (1 << 0);  //reset
     DDRB |= (1 << 2);  // ledmange
     DDRB |= (1 << 3);  //WDG_main
@@ -25,28 +52,31 @@ int SysInit(void) {
     LEDM_Init();
     WDGM_Init();
     WDGDrv_Init();
-    
+    Timer0_Init();
 }
 
-static uint8 isFirstIteration = 1;
 int main(void) {    
     SysInit();
-    PORTB |= (1 <<0);
-    static uint8 WDGCounter = 0;
-    // Main loop
+    PORTB |= (1 << 0); // to monitor the system reset     
+    
     while (1) {
-        LEDM_Manage();          
-        _delay_ms(10); // wait for 10ms to call LEDM_Manage again 
-        // _delay_ms(5); // wait for 5ms to call LEDM_Manage again 
-        // wait until 20ms timing for WDGM_MainFunction (even iterations) 
-        // WDGCounter += 5; // Increment by the delay amount (5ms)
-        WDGCounter += 10; // Increment by the delay amount (10ms)
-        if (WDGCounter >= 20) {
-            WDGM_MainFunction();  // Call watchdog management every 20ms
-            call_count_100_ms +=20;
-            call_count_50_ms ++;
+
+        if ((current_time - time_at_last_10ms) >= 10)
+        {
+            time_at_last_10ms = current_time;
+            LEDM_Manage(); 
+             WDGCounter++;
+
+          if (WDGCounter >= 2) {
+            // wdg_call_count_within_50_ms++;
+            wdg_call_count_within_100_ms++;
             WDGCounter = 0; // Reset count after calling WDGM_MainFunction()
+            stuck = 1;
+            WDGM_MainFunction();  // Call watchdog management every 20ms
+            }
         }
-    }
+
+        }
+
     return 0;
 }

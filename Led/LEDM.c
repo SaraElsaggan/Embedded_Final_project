@@ -15,20 +15,21 @@ void LEDM_Init(void)
 {
     GPIO_Init();
     led_state = 0;
+	GPIO_Write(LED_PIN_ID, led_state);
     time_counter = 0;
 }
 
 void LEDM_Manage(void)
 {   
     PORTB ^= (1 << 2); // to indicate the perodicity of the function
-    
-	if (time_counter == 500)
+	time_counter += 10;
+
+	if (time_counter >= 500)
     {
 		led_state = ~led_state;
 		GPIO_Write(LED_PIN_ID, led_state);
 		time_counter = 0;
     }
 	// time_counter += 5;
-	time_counter += 10;
-    // WDGM_AlivenessIndication(); // to count the number of function calls
+//   WDGM_AlivenessIndication(); // to count the number of function calls
 }

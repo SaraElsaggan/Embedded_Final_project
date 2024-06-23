@@ -1,6 +1,7 @@
 #ifndef GPIO_PRIVATE_H
 #define GPIO_PRIVATE_H
 #include "Utils.h"
+#include "Std_Types.h"
 
 #define GPIOB_BASE_ADDR    0x23
 #define GPIOC_BASE_ADDR    0x26
