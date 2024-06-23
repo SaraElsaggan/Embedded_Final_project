@@ -3,7 +3,7 @@
 
 // for initializing the GPIO
 #define LED_PORT_ID 0 // port B
-#define LED_PIN_ID  1
+#define LED_PIN_ID  4
 
 
 void GPIO_Init(void);

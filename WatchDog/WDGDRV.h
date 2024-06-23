@@ -20,6 +20,13 @@
 #define CS11  1
 #define CS10  0
 
+#define TCCR0A (*(volatile uint8 *)(0x24))
+#define OCR0A (*(volatile uint8 *)(0x27))
+#define TIMSK0 (*(volatile uint8 *)(0x6E))
+#define TCCR0B (*(volatile uint8 *)(0x25))
+
+#define OCIE0A 1
+
 
 #define ICIE1  5
 #define OCIE1B  2
