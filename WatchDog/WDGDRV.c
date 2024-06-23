@@ -94,5 +94,9 @@ void WDGDrv_IsrNotification(void)
             PORTB ^= (1 << 4); // to indicate the perodicity refreshment of the wdt
 			is_reset++;
         }
+        else{
+            wdt_enable(WDTO_15MS);
+        }
+
 
 }

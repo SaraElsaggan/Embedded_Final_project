@@ -61,13 +61,13 @@ int main(void) {
     
     while (1) {
 
-        if ((current_time - time_at_last_10ms) >= 10)
+        if ((current_time - time_at_last_10ms) >= 5)
         {
             time_at_last_10ms = current_time;
             LEDM_Manage(); 
-             WDGCounter++;
+             WDGCounter+=5;
 
-          if (WDGCounter >= 2) {
+          if (WDGCounter >= 20) {
             // wdg_call_count_within_50_ms++;
             wdg_call_count_within_100_ms++;
             WDGCounter = 0; // Reset count after calling WDGM_MainFunction()
@@ -75,6 +75,22 @@ int main(void) {
             WDGM_MainFunction();  // Call watchdog management every 20ms
             }
         }
+
+
+        // if ((current_time - time_at_last_10ms) >= 10)
+        // {
+        //     time_at_last_10ms = current_time;
+        //     LEDM_Manage(); 
+        //      WDGCounter++;
+
+        //   if (WDGCounter >= 2) {
+        //     // wdg_call_count_within_50_ms++;
+        //     wdg_call_count_within_100_ms++;
+        //     WDGCounter = 0; // Reset count after calling WDGM_MainFunction()
+        //     stuck = 1;
+        //     WDGM_MainFunction();  // Call watchdog management every 20ms
+        //     }
+        // }
 
         }
 
