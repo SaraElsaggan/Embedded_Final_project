@@ -10,7 +10,6 @@ RM := rm -rf
 -include sources.mk
 -include src/subdir.mk
 -include WatchDog/subdir.mk
--include Nvic/subdir.mk
 -include Led/subdir.mk
 -include Gpio/subdir.mk
 -include subdir.mk

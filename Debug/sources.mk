@@ -22,7 +22,6 @@ C_DEPS :=
 SUBDIRS := \
 Gpio \
 Led \
-Nvic \
 WatchDog \
 src \
 

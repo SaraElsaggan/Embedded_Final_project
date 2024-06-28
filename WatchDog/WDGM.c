@@ -10,6 +10,7 @@ uint32 stuck;
 
 void WDGM_Init(void)
 {
+    WDGDrv_Init();
     status = OK;
     led_no_calls = 0;
     stuck = 1;
